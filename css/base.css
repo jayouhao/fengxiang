@@ -30,6 +30,7 @@ input{
     height: 1px;
     width: 1px;
     z-index: -1;
+    display: none;
 }
 
 .tan{

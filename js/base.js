@@ -27,16 +27,18 @@ $(function(){
         uls.append(`
         <li>
             <img src="${img[i]}" alt="" ondragstart="return false;">
-            <p class="title">${title[i]}</p>
-            <p>邀请码：<span class="yao">${yao[i]}</span></p>
+            <div class="title">
+                <p>${title[i]}</p>
+                <p>邀请码：<span class="yao">${yao[i]}</span></p>
+            </div>
         </li> 
         `)
     };
 
-    $(".yao,p").click(function(){        
+    $(".title").click(function(){        
         var onj=$("input"),vla=$(this).text();      
-        vla.includes("：")?
-        vla=vla.split("：")[1]:"";        
+        
+        vla=vla.replace("邀请码："," | ");
         onj.val();        
         onj[0].select(vla);
         document.execCommand('copy', false, onj);
