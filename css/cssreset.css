@@ -41,6 +41,15 @@ html{
 	font-size:inherit;
 	font-weight:inherit;
 	*font-size:100%;
+	border: 0;
+	outline: none;
 }legend{
 	color:#000;
 }#yui3-css-stamp.cssreset{ display:none}
+button{
+	outline: none;
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
