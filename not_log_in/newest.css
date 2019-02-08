@@ -227,7 +227,8 @@ pre code {
 }
 .navigation{    
     height: 56px;
-    width: 1200px;
+    min-width: 1200px;
+    width: 95%;
     margin: auto;
     line-height: 56px;
     color: #fff;
@@ -242,6 +243,7 @@ pre code {
 }
 .img img{
     height: 100%;    
+    width: 100%;
 }
 .head label{
     margin: 0 17px 0 24px;
