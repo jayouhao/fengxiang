@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>最新动态</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./newest.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="navigation">
+            <div class="left">
+                <span>语言品种：</span>
+                <!-- Single button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <label class="select">
+                            <img class="imgok" src="../img/china-con.png" alt="">
+                            <span class="nameok">中国</span>
+                        </label>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><label class="select">
+                                    <img src="../img/china-con.png" alt="">
+                                    <span>中国</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><label class="select">
+                                    <img src="../img/english.jpg" alt="">
+                                    <span>美国</span>
+                                </label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <span>登陆</span><label>|</label>
+                <span>注册</span><label>|</label>
+                <span>手机简版</span>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/home-background.png" alt="">
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="middle-cen">
+            <ul class="middle-left">
+                <li class="middle-li-one">
+                    <img src="../img/forget-logo.png" alt="">
+                    <div>
+                        <p class="name">测&nbsp;&nbsp;域</p>
+                        <p>Measuring the domain</p>
+                    </div>
+                </li>
+                <li class="middle-select select-ok" id="newest">
+                    <img src="../img/dynamic.png" alt="">
+                    <p>最新动态</p>
+                </li>
+                <li class="middle-select" id="help">
+                    <img src="../img/help.png" alt="">
+                    <p>帮助中心</p>
+                </li>
+                <li class="middle-select" id="product">
+                    <img src="../img/product.png" alt="">
+                    <p>产品介绍</p>
+                </li>
+                <li class="middle-select" id="relation">
+                    <img src="../img/relation.png" alt="">
+                    <p>联系我们</p>
+                </li>
+                <li class="middle-select" id="opinion">
+                    <img src="../img/feedback.png" alt="">
+                    <p>意见反馈</p>
+                </li>
+                <li class="middle-selecth"></li>
+            </ul>
+            <ul class="middle-right">
+
+                <!-- 最新动态 -->
+                <li class="newest hides block">
+                    <div class="newestdiv">
+                        <ul class="new-list">
+                            <li>
+                                <img src="../img/newejt-background.png" alt="">
+                                <div class="new-introduce">
+                                    <p class="new-name">为什么使用测域</p>
+                                    <p class="new-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域</p>
+                                    <p class="new-time">发表时间（发表于2019年1月1日），阅读数（10万+）</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../img/newejt-background.png" alt="">
+                                <div class="new-introduce">
+                                    <p class="new-name">为什么使用测域</p>
+                                    <p class="new-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域</p>
+                                    <p class="new-time">发表时间（发表于2019年1月1日），阅读数（10万+）</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../img/newejt-background.png" alt="">
+                                <div class="new-introduce">
+                                    <p class="new-name">为什么使用测域</p>
+                                    <p class="new-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域</p>
+                                    <p class="new-time">发表时间（发表于2019年1月1日），阅读数（10万+）</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="new-seek">
+                            <p class="new-seek-rigth">
+                                <input type="text">
+                                <img src="../img/seek.png" alt="">
+                            </p>
+                            <p class="new-seek-select">筛选条件：</p>
+                            <p class="new-seek-radio">
+                                <label class="new-seek-one">
+                                    <input type="radio" name="dan" checked value="最近时间">
+                                    <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                    最近时间
+                                </label>
+                                <label>
+                                    <input type="radio" name="dan" value="最多浏览量">
+                                    <span class="new-seek-sele"><span></span></span>
+                                    最多浏览量
+                                </label>
+                            </p>
+                            <button class="new-seek-button">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+                        </div>
+                        <!-- 分页 -->
+                        <div class="customBootstrap">
+                            <ul id="paging" class="pagination"></ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 帮助中心 -->
+                <li class="help hides">
+                    <ul>
+                        <li class="help-li">
+                            <p class="help-name">
+                                <span></span>
+                                为什么使用测域
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                        <li class="help-li">
+                            <p class="help-name">
+                                <span></span>
+                                为什么使用测域
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 产品介绍 -->
+                <li class="product hides">
+                    <ul>
+                        <li class="product-li">
+                            <img src="../img/make-money.png" alt="">
+                            <div>
+                                <p class="product-name">赚钱路由器</p>
+                                <p class="product-cen">
+                                    士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的
+                                    士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的
+                                    士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的
+                                </p>
+                            </div>
+                        </li>
+                        <li class="product-li">
+                            <img src="../img/make-money.png" alt="">
+                            <div>
+                                <p class="product-name">赚钱路由器</p>
+                                <p class="product-cen">
+                                    士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的士大夫大师傅杜十大师傅似的
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 联系我们 -->
+                <li class="relation hides">
+                    <img src="../img/relation_banner.png" alt="">
+                    <ul>
+                        <li class="relation-li">
+                            <p class="help-name">
+                                <span></span>
+                                关于测域
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                        <li class="relation-li">
+                            <p class="help-name">
+                                <span></span>
+                                赞助我们
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                        <li class="relation-li">
+                            <p class="help-name">
+                                <span></span>
+                                广告服务
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                        <li class="relation-li">
+                            <p class="help-name">
+                                <span></span>
+                                友情链接
+                            </p>
+                            <p class="help-cen">为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                                为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域为什么使用测域
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 意见反馈 -->
+                <li class="opinion hides">
+                    <p>反馈类型:</p>
+                    <div>
+                        <button type="button" class="button buttonBlue">前&nbsp;&nbsp;&nbsp;&nbsp;端</button>
+                        <button type="button" class="button">功&nbsp;&nbsp;&nbsp;&nbsp;能</button>
+                        <button type="button" class="button">功能需求</button>
+                        <button type="button" class="button">其&nbsp;&nbsp;&nbsp;&nbsp;他</button>
+                    </div>
+                    <p>反馈内容:</p>
+                    <textarea name="" placeholder="请填写反馈内容！" id="" cols="30" rows="10"></textarea>
+                    <p class="way">联系方式</p>
+                    <input type="text" placeholder="请输入联系方式">
+                    <button type="button" class="submit">提交</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-box">
+            <ul class="bottom-ul">
+                <li class="bottom-li">
+                    <ul class="bottom-list">
+                        <li class="bottom-name">帮助中心</li>
+                        <li><a href="#">为什么使用测域？</a></li>
+                        <li><a href="#">如何检测DNS劫持？</a></li>
+                        <li><a href="#">为什么使用测域？</a></li>
+                        <li><a href="#">如何检查服务器带宽及速率？</a></li>
+                    </ul>
+                    <ul class="bottom-list bottom-list1">
+                        <li class="bottom-name">产品介绍</li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                    </ul>
+                    <ul class="bottom-list bottom-list1">
+                        <li class="bottom-name">联系我们</li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                    </ul>
+                    <ul class="bottom-list bottom-list1 bottom-list2">
+                        <li class="bottom-name">意见反馈</li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                        <li><a href="#">赚钱路由器</a></li>
+                    </ul>
+                    <img src="../img/blank.png" alt="">
+                    <img src="../img/blank.png" alt="">
+                </li>
+            </ul>
+            <div class="license">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+                <img src="../img/license.png" alt="">
+            </div>
+            <div class="records">
+                <p>copyright © 2016-2918 备案号: 88888888</p>
+                <p>客服邮箱: 999988888@ceyu.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="./newest.js"></script>
+</body>
+
+</html>
