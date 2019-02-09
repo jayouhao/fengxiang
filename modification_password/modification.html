@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="./modification.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="left">
+        </div>
+        <div class="right">
+            <span>登陆</span><label>|</label>
+            <span>注册</span><label>|</label>
+            <span>手机简版</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-con">
+            <div class="logo-name">
+                <img src="../img/forget-logo.png" alt="">
+                <div>
+                    <p class="name">测&nbsp;&nbsp;&nbsp;域</p>
+                    <p class="eglish">Measuring the domain</p>
+                </div>
+            </div>
+            <p class="star-name"><span class="star">*</span>手机验证码:</p>
+            <input type="number" placeholder="请输入手机号码" class="phone">
+            <p class="two">
+                <input type="text" class="verification" placeholder="请输入验证码">
+                <button type="button" class="gain">获取验证码</button>
+            </p>
+            <p class="star-name"><span class="star">*</span>新密码:</p>
+            <input type="text" class="password">
+            <p class="hint">密码由6-16个字符组成，区分大小写（不能使9位以下的纯数字，不能包含空格）</p>
+            <p class="star-name"><span class="star">*</span>确认新密码:</p>
+            <input type="text" class="password1">
+            <button type="button">提&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="./modification.js"></script>
+</body>
+
+</html>

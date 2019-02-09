@@ -49,6 +49,7 @@ $(function(){
     })
     //点击左边导航的
     $(".middle-select").click(function(){
+        document.title=$(this).find("p").text();
         var clas=$(this).attr("id");
         $(".select-ok").removeClass("select-ok");
         $(this).addClass("select-ok")
