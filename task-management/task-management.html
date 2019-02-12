@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务管理</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./task-management.css">
+</head>
+
+<body>
+    <img src="../img/background.png" class="all-background" alt="">
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li><img src="../img/me.png" alt=""> 昵称</li>
+                <li><img src="../img/change-password.png" alt=""> 修改密码</li>
+                <li><img src="../img/set.png" alt=""> 设置</li>
+                <li><img src="../img/information.png" alt=""> 消息中心</li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                <span>系统公告: xxxxxxxxxxxx</span>
+                <span class="addbuton">+添加任务</span>
+            </div>
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/mission.png" alt="" class="montimg">
+                <span class="gneral">任&nbsp;务&nbsp;管&nbsp;理</span>
+            </div>
+            <hr class="linehr">
+            <p class="report reporte8">任务信息</p>
+            <p class="report">创建任务</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li>
+                        <a href="../general/general.html"><img src="../img/survey-white.png" alt="">概况</a>
+                    </li>
+                    <li class="backless"><a href="../task-management/task-management.html" class="gaik"><img
+                                src="../img/mission-blue.png" alt="">任务管理</a></li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="centent centent-message">
+                <p class="nav">首页>>任务管理>>任务信息</p>
+                <ul class="message-ul">
+                    <li class="mes-id">ID</li>
+                    <li class="mes-name">任务名称</li>
+                    <li class="mes-address">监控地址</li>
+                    <li class="mes-time">创建时间</li>
+                    <li class="mes-type">任务类型</li>
+                    <li class="mes-state">状态 (Status)</li>
+                    <li class="mes-set">报警设置</li>
+                    <li class="mes-operationg">操作</li>
+                </ul>
+                <ul class="mes-input">
+                    <li><input class="id" type="text"></li>
+                    <li><input class="name" type="text"></li>
+                    <li><input class="address" type="text"></li>
+                    <li><input class="time" type="text"></li>
+                    <li>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-state"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-state1">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">运行</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">暂停</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">终止</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mes-set1">缩放的</li>
+                    <li><button type="button" class="mes-button">搜&nbsp;索</button></li>
+                </ul>
+
+                <!-- data-list这个里面是列表，这个data-list的ul不要隐藏 -->
+                <ul class="data-list">
+                    <li class="list-li">
+                        <ul class="message-ul data-list-ul">
+                            <li class="data-id">123342</li>
+                            <li class="data-name">加工圈</li>
+                            <li class="data-address">www.jiagongquan.com</li>
+                            <li class="data-time">2010-1-2</li>
+                            <li class="data-type">http</li>
+                            <li class="data-state">暂停</li>
+                            <li class="data-set">设置</li>
+                            <li class="data-operationg">
+                                <img class="seek1-img" src="../img/seek1.png" alt="">
+                                <img class="amend-img" src="../img/amend.png" alt="">
+                                <img class="delete-img" src="../img/delete.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-li">
+                        <ul class="message-ul data-list-ul">
+                            <li class="data-id">123342</li>
+                            <li class="data-name">加工圈</li>
+                            <li class="data-address">www.jiagongquan.com</li>
+                            <li class="data-time">2010-1-2</li>
+                            <li class="data-type">http</li>
+                            <li class="data-state">暂停</li>
+                            <li class="data-set">设置</li>
+                            <li class="data-operationg">
+                                <img class="seek1-img" src="../img/seek1.png" alt="">
+                                <img class="amend-img" src="../img/amend.png" alt="">
+                                <img class="delete-img" src="../img/delete.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 分页 -->
+                <div class="customBootstrap">
+                    <ul id="paging" class="pagination"></ul>
+                </div>
+            </div>
+
+            <div class="centent centent-establish">
+                <p class="nav">首页>>任务管理>>创建任务</p>
+                <p class="establish-top">
+                    <button type="button" class="esta-but esta-but-blue">创建HTTP任务</button><button type="button" class="esta-but">创建PING任务</button>
+                </p>
+                <p class="establish-red establish-hint">带*的选项为必填项</p>
+                <!-- http的 -->
+                <div class="check-flex establish-http">
+                    <ul class="update-left establish-lfet">
+                        <li><span class="establish-red">*</span>任务名称：</li>
+                        <li><span class="establish-red">*</span>监控地址：</li>
+                        <li><span class="establish-red">*</span>监测频率：</li>
+                        <li class="establish-police"><span class="establish-red">*</span>报警模板：</li>
+                        <li class="establish-hides">Host：</li>
+                        <li class="establish-hides">Domain：</li>
+                        <li class="establish-hides">Http超时间：</li>
+                        <li class="establish-hides">Speed：</li>
+                        <li class="chang-du establish-hides">最大内容下载长度：</li>
+                        <li class="chang-du1 establish-hides">Cookie：</li>
+                        <li class="chang-du1 establish-hides">Referer：</li>
+                        <li class="chang-du2 establish-hides">user_agent：</li>
+                        <li class="establish-hides">开始时间：</li>
+                        <li class="endtime establish-hides">结束时间：</li>
+                        <li class="lsp establish-hides"><span class="establish-red">*</span>lsp：</li>
+                        <li class="establish-hides"><span class="establish-red">*</span>Status：</li>
+                    </ul>
+                    <ul class="update-right">
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                        <li class="new-seek-radio update-times">
+                            <label class="new-seek-one">
+                                <input type="radio" name="time" checked value="6小时">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                6小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="2小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                2小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="1小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                1小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="30分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                30分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="15分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                15分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="10分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                10分钟
+                            </label>
+                        </li>
+                        <li class="update-times establish-id establish-police">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type">ID:15181</label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-typecli">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15181</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15183</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="establish-blue">
+                                注明：您需要在警报管理中增加报警模板，该区域将显示所有报警模板
+                            </span>
+                        </li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input class="cookie" type="text"></li>
+                        <li class="establish-hides"><input class="referer" type="text"></li>
+                        <li class="establish-hides"><input class="agent" type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="checkbox-update establish-hides">
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" 1 value="电信">
+
+                                电信
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="联通">
+
+                                联通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="铁通">
+
+                                铁通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="移动">
+
+                                移动
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="教育网">
+
+                                教育网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="科技网">
+
+                                科技网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="华数">
+
+                                华数
+                            </label> <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="鹏博士">
+
+                                鹏博士
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="有线通">
+
+                                有线通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="广电网">
+
+                                广电网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="视讯宽带">
+
+                                视讯宽带
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="国外">
+
+                                国外
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="其它">
+
+                                其它
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="香港">
+
+                                香港
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="台湾">
+
+                                台湾
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="澳门">
+
+                                澳门
+                            </label>
+                        </li>
+                        <li class="new-seek-radio status-radio establish-hides">
+                            <label class="new-seek-one">
+                                <input type="radio" name="status" checked value="运行">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                运行
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="暂停">
+                                <span class="new-seek-sele"><span></span></span>
+                                暂停
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="终止">
+                                <span class="new-seek-sele"><span></span></span>
+                                终止
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="establish-advanced">高级</span>
+                    <button type="button" class="establish-button">创&nbsp;&nbsp;建</button>
+                </div>
+
+                <!-- PING的 -->
+                <div class="check-flex establish-PING">
+                    <ul class="update-left establish-lfet">
+                        <li><span class="establish-red">*</span>任务名称：</li>
+                        <li><span class="establish-red">*</span>监控地址：</li>
+                        <li><span class="establish-red">*</span>监测频率：</li>
+                        <li class="establish-police"><span class="establish-red">*</span>报警模板：</li>
+                        <li class="establish-hides1">Host：</li>
+                        <li class="establish-hides1">Domain：</li>
+                        <li class="establish-hides1">Ping超时间：</li>
+                        <li class="establish-hides1">包大小：</li>
+                        <li class="chang-du establish-hides1">发包数：</li>
+
+                        <!-- <li class="chang-du1 establish-hides">Cookie：</li>
+                        <li class="chang-du1 establish-hides">Referer：</li>
+                        <li class="chang-du2 establish-hides">user_agent：</li> -->
+
+                        <li class="establish-hides1">开始时间：</li>
+                        <li class="endtime establish-hides1">结束时间：</li>
+                        <li class="lsp establish-hides1"><span class="establish-red">*</span>lsp：</li>
+                        <li class="establish-hides1"><span class="establish-red">*</span>Status：</li>
+                    </ul>
+                    <ul class="update-right">
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                        <li class="new-seek-radio update-times">
+                            <label class="new-seek-one">
+                                <input type="radio" name="time" checked value="6小时">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                6小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="2小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                2小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="1小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                1小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="30分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                30分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="15分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                15分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="10分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                10分钟
+                            </label>
+                        </li>
+                        <li class="update-times establish-id establish-police">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type">ID:15181</label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-typecli">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15181</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15183</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="establish-blue">
+                                注明：您需要在警报管理中增加报警模板，该区域将显示所有报警模板
+                            </span>
+                        </li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <!-- <li class="establish-hides"><input class="cookie" type="text"></li>
+                        <li class="establish-hides"><input class="referer" type="text"></li>
+                        <li class="establish-hides"><input class="agent" type="text"></li> -->
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="checkbox-update establish-hides1">
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" 1 value="电信">
+
+                                电信
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="联通">
+
+                                联通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="铁通">
+
+                                铁通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="移动">
+
+                                移动
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="教育网">
+
+                                教育网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="科技网">
+
+                                科技网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="华数">
+
+                                华数
+                            </label> <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="鹏博士">
+
+                                鹏博士
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="有线通">
+
+                                有线通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="广电网">
+
+                                广电网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="视讯宽带">
+
+                                视讯宽带
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="国外">
+
+                                国外
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="其它">
+
+                                其它
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="香港">
+
+                                香港
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="台湾">
+
+                                台湾
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="澳门">
+
+                                澳门
+                            </label>
+                        </li>
+                        <li class="new-seek-radio status-radio establish-hides1">
+                            <label class="new-seek-one">
+                                <input type="radio" name="status" checked value="运行">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                运行
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="暂停">
+                                <span class="new-seek-sele"><span></span></span>
+                                暂停
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="终止">
+                                <span class="new-seek-sele"><span></span></span>
+                                终止
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="establish-advanced1">高级</span>
+                    <button type="button" class="establish-button">创&nbsp;&nbsp;建</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 查看详情的 -->
+    <div class="check">
+        <div class="check-background"></div>
+        <div class="check-box">
+            <div class="check-flex">
+                <ul class="check-left">
+                    <li>ID</li>
+                    <li>任务名称</li>
+                    <li>监控地址</li>
+                    <li>监测频率</li>
+                    <li>最大节点数</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>监控文件</li>
+                    <li>监控端口</li>
+                    <li>Http超时时间</li>
+                    <li>Speed</li>
+                    <li>最大内容下载长度</li>
+                    <li>Cookie</li>
+                    <li>Referer</li>
+                    <li>user_agent</li>
+                    <li>Ping超时时间</li>
+                    <li>包大小</li>
+                    <li>发包数</li>
+                    <li>任务类型</li>
+                    <li>Status</li>
+                    <li>创建时间</li>
+                    <li>开始时间</li>
+                    <li>结束时间</li>
+                </ul>
+                <ul class="check-right">
+                    <li>ID</li>
+                    <li>任务名称</li>
+                    <li>监控地址</li>
+                    <li>监测频率</li>
+                    <li>最大节点数</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>监控文件</li>
+                    <li>监控端口</li>
+                    <li>Http超时时间</li>
+                    <li>Speed</li>
+                    <li>最大内容下载长度</li>
+                    <li>Cookie</li>
+                    <li>Referer</li>
+                    <li>user_agent</li>
+                    <li>Ping超时时间</li>
+                    <li>包大小</li>
+                    <li>发包数</li>
+                    <li>任务类型</li>
+                    <li>Status</li>
+                    <li>创建时间</li>
+                    <li>开始时间</li>
+                    <li>结束时间</li>
+                </ul>
+            </div>
+            <button class="check-button" type="button">返&nbsp;&nbsp;回</button>
+        </div>
+    </div>
+
+    <!-- 更新 -->
+    <div class="update">
+        <div class="check-background"></div>
+        <div class="check-box">
+            <div class="check-flex">
+                <ul class="update-left">
+                    <li>*任务名称</li>
+                    <li>*监控地址</li>
+                    <li>*监测频率</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>Http超时间</li>
+                    <li>Speed</li>
+                    <li class="chang-du">最大内容下载长度</li>
+                    <li class="chang-du1">Cookie</li>
+                    <li class="chang-du1">Referer</li>
+                    <li class="chang-du2">user_agent</li>
+                    <li>开始时间</li>
+                    <li class="endtime">结束时间</li>
+                    <li class="lsp">*lsp</li>
+                    <li>*Status</li>
+                </ul>
+                <ul class="update-right">
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li class="new-seek-radio update-times">
+                        <label class="new-seek-one">
+                            <input type="radio" name="time" checked value="6小时">
+                            <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                            6小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="2小时">
+                            <span class="new-seek-sele"><span></span></span>
+                            2小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="1小时">
+                            <span class="new-seek-sele"><span></span></span>
+                            1小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="30分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            30分钟
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="15分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            15分钟
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="10分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            10分钟
+                        </label>
+                    </li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input class="cookie" type="text"></li>
+                    <li><input class="referer" type="text"></li>
+                    <li><input class="agent" type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li class="checkbox-update">
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" 1 value="电信">
+
+                            电信
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="联通">
+
+                            联通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="铁通">
+
+                            铁通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="移动">
+
+                            移动
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="教育网">
+
+                            教育网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="科技网">
+
+                            科技网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="华数">
+
+                            华数
+                        </label> <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="鹏博士">
+
+                            鹏博士
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="有线通">
+
+                            有线通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="广电网">
+
+                            广电网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="视讯宽带">
+
+                            视讯宽带
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="国外">
+
+                            国外
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="其它">
+
+                            其它
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="香港">
+
+                            香港
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="台湾">
+
+                            台湾
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="澳门">
+
+                            澳门
+                        </label>
+                    </li>
+                    <li class="new-seek-radio status-radio">
+                        <label class="new-seek-one">
+                            <input type="radio" name="status" checked value="运行">
+                            <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                            运行
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="暂停">
+                            <span class="new-seek-sele"><span></span></span>
+                            暂停
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="终止">
+                            <span class="new-seek-sele"><span></span></span>
+                            终止
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <p class="bottom">
+                <button type="button">确认修改</button>
+                <button type="button" class="base">返&nbsp;&nbsp;回</button>
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- 删除提示 -->
+    <div class="remove">
+        <div class="remove-box">
+            <p class="remove-name"><span>士大夫但是sdf</span>显示:</p>
+            <p class="remove-text">确定删除这条数据吗</p>
+            <p class="remove-button">
+                <button type="button">确定</button>
+                <button type="button" class="remove-base">取消</button>
+            </p>
+            <img class="remove-x" src="../img/x.png" alt="">
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./task-management.js"></script>
+</body>
+
+</html>

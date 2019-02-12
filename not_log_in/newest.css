@@ -218,8 +218,9 @@ pre code {
 
 
 
-
-
+p,span,button,input,div{
+    font-family: "微软雅黑";
+}
 .head{
     width: 100%;
     min-width: 1200px;

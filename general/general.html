@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>概况</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./general.css">
+</head>
+
+<body>
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li><img src="../img/me.png" alt=""> 昵称</li>
+                <li><img src="../img/change-password.png" alt=""> 修改密码</li>
+                <li><img src="../img/set.png" alt=""> 设置</li>
+                <li><img src="../img/information.png" alt=""> 消息中心</li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                <span>系统公告: xxxxxxxxxxxx</span>
+                <span class="addbuton">+添加任务</span>
+            </div>
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/monitoring.png" alt="" class="montimg">
+                <span class="gneral">监控点概况</span>
+            </div>
+            <hr class="linehr">
+            <p class="report">监测报告</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li class="backless">
+                        <a href="../general/general.html" class="gaik"><img src="../img/survey.png" alt="">概况</a>
+                    </li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="centent">
+                <p class="nav">首页>>监控点概况</p>
+                <ul class="centent-ul">
+                    <li class="centent-li">
+                        <p class="recharge">充&nbsp;&nbsp;&nbsp;&nbsp;值</p>
+                        <div class="recharge-box">
+                            <div class="recharge-user">
+                                <p class="recharge-head">
+                                    <img src="../img/user.png" alt="">
+                                    用户名
+                                </p>
+                                <p class="sum">余额：&nbsp;<span>100.00RMB</span></p>
+                                <p class="sequencing">测币余额：&nbsp;<span>109</span><img src="../img/cy.png" alt=""></p>
+                                <button tyle="button" class="recharge-button">充&nbsp;值</button>
+                            </div>
+                            <div class="transverter">
+                                <div class="transverter-cen">
+                                    <p class="transverter-top"><span>转换器</span>1元=100测币</p>
+                                    <p class="arrows">
+                                        <input type="number">
+                                        <span class="yuan">元</span>
+                                        <img src="../img/arrows.png" alt="">
+                                        <span class="blue">100</span>&nbsp;<span class="bi">测币</span><br>
+                                    </p>
+                                    <button type="button" class="transverter-button">兑换</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="centent-li">
+                        <p class="newest">最新监控告警</p>
+                        <ul>
+                            <li class="newest-li">
+                                <p class="newest-garden"></p>
+                                <p class="newest-cen">
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                </p>
+                            </li>
+                            <li class="newest-li">
+                                <p class="newest-garden"></p>
+                                <p class="newest-cen">
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                    士大夫士大夫吉林省地方就士大夫士大夫吉林省地方就
+                                </p>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap">
+                            <ul id="paging" class="pagination"></ul>
+                        </div>
+                    </li>
+                    <li class="centent-li ip">
+                        <p class="newest">监控域名或IP</p>
+                        <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+                        <ul class="ip-title">
+                            <li class="ip-id">ID</li>
+                            <li class="ip-ip">监控域名或IP</li>
+                            <li class="ip-time">添加时间</li>
+                            <li class="ip-state">监控状态</li>
+                            <li class="ip-operation">操作</li>
+                        </ul>
+                        <ul class="data-list">
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state data-state">正常</li>
+                                    <li class="ip-operation">零零</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state data-state">正常</li>
+                                    <li class="ip-operation"></li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state data-state">正常</li>
+                                    <li class="ip-operation"></li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state data-state">正常</li>
+                                    <li class="ip-operation"></li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state data-state">正常</li>
+                                    <li class="ip-operation"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <ul id="paging-ip" class="pagination"></ul>
+                        </div>
+                    </li>
+                    <li class="centent-li api">
+                        <p class="newest">API使用统计</p>
+                        <ul class="ip-title">
+                            <li class="ip-id api-id">监控ID</li>
+                            <li class="ip-ip api-url">监控URL</li>
+                            <li class="ip-time">监控时间</li>
+                            <li class="ip-state">接口请求类型</li>
+                            <li class="ip-operation">接口次数</li>
+                        </ul>
+                        <ul class="data-list api-list">
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state api-state">-</li>
+                                    <li class="ip-operation api-operation">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state api-state">-</li>
+                                    <li class="ip-operation api-operation">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state api-state">-</li>
+                                    <li class="ip-operation api-operation">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state api-state">-</li>
+                                    <li class="ip-operation api-operation">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip">www.324.com</li>
+                                    <li class="ip-time">1992-1-1</li>
+                                    <li class="ip-state api-state">-</li>
+                                    <li class="ip-operation api-operation">10</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <ul id="paging-api" class="pagination"></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 充值弹出框 -->
+    <div class="popup-recharge">
+        <div class="popup-box">
+            <p class="popup-name">充值页面</p>
+            <p class="popup-number"><span>订单号:</span>12312313132</p>
+            <p class="method">
+                <span>充值方式:</span>
+                <img src="../img/wechat.png" class="method-img" alt="">
+                <img src="../img/alipay.png" class="method-img" alt="">
+                <img src="../img/bank_card.png" class="method-img" alt="">
+            </p>
+            <p class="popup-money">
+                <span>充值金额:</span>
+                <input type="number">
+                <span class="yuan1">元</span>
+                <span class="reds">备注：充值金额不得小于50元</span>
+            </p>
+            <p class="popup-button">
+                <button type="button">确定充值</button>
+                <button type="button" class="canel">取消充值</button>
+            </p>
+        </div>
+    </div>
+    <!-- end -->
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="../js/highcharts.js"></script>
+    <script src="./general.js"></script>
+</body>
+
+</html>
