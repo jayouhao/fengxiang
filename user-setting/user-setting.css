@@ -60,6 +60,7 @@ body{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .contenleft{
     background: #4264A4;
@@ -71,6 +72,7 @@ body{
     padding:20px 0px 10px 0px;
 }
 .montimg{
+    width: 25px;
     margin-left: 34px
 }
 .gneral{
@@ -121,13 +123,6 @@ body{
 .conright-nav img{
     margin-right: 10px;
 }
-.conright-nav .backless{
-    background: white;
-    padding: 0 10px 4px;
-}
-.conright-nav .gaik{
-    color: #4264A4;
-}
 .nav{    
     margin-bottom: 20px;
 }
@@ -137,7 +132,9 @@ body{
     background: #fff;
     border-radius: 6px;
     cursor: default;
-    margin-top: 5px;
+    margin-top: 5px;    
+    position: relative;
+    padding-bottom: 164px;
 }
 .prot-red{
     margin-top: 30px;
@@ -203,7 +200,7 @@ body{
     color: #fff;
     display: block;
     margin-left: 300px;
-    font-size: 16px;
+    font-size: 16px;    
 }
 
 .popup-recharge{
@@ -332,4 +329,57 @@ input[type="number"]{
     right: 15px;
     top: 10px;
     cursor: pointer;
+}
+.centen-cen{
+    display: flex;
+    margin: 100px auto 0;
+    width: 685px;     
+}
+.centen-user{
+    width: 140px;    
+    height: 190px;
+    margin-right: 40px;
+}
+.centen-check{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.centen-top{
+    font-size: 22px;
+    margin-bottom: 60px;
+    margin-top: 12px;
+}
+.centen-top a{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #00A1EA;
+}
+.centen-name{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.centen-phon{
+    font-size: 16px;   
+}
+.setting-submit{
+    margin-top: 100px;
+    width: 100px;
+    height: 30px;
+    background: #00A1EA;
+    border-radius: 2px;
+    color: #fff;
+    margin: 100px auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+.bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;        
+}
+.bottom img{
+    width: 49%;
 }

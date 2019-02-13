@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="./managenment-police.css">
 </head>
+
 <body>
+    <img src="../img/background.png" class="all-background" alt="">
     <div class="head">
         <img src="../img/logo.png" alt="" class="logoimg">
         <div class="headright">
@@ -45,14 +48,18 @@
                     <li>
                         <a href="../general/general.html"><img src="../img/survey-white.png" alt="">概况</a>
                     </li>
-                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a></li>
-                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a></li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
                     <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
-                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png" alt="">自建监控点管理</a></li>
-                    <li class="backless"><a href="../managenment-police/managenment-police.html" class="gaik"><img src="../img/finance-blue.png" alt="">财务管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li class="backless"><a href="../managenment-police/managenment-police.html" class="gaik"><img
+                                src="../img/finance-blue.png" alt="">财务管理</a></li>
                 </ul>
             </div>
-            
+
             <ul class="whiteareacontent">
                 <!-- 财务概况 -->
                 <li class="linone manement" id="manement-id">
@@ -87,12 +94,12 @@
                         </div>
                         <div class="cmoney">
                             <div class="myuer">
-                                <span class="yumoney">我的余额 :  <input class="inputer" type="text" value="xx"> 元</span>
+                                <span class="yumoney">我的余额 : <input class="inputer" type="text" value="xx"> 元</span>
                                 <span class="wapspan"><img src="../img/top_uo.png" alt=""><span>充值</span> </span>
                             </div>
                             <div class="myceb">
-                                <span class="yumoney">我的测币 :  <input class="inputer" type="text" value="xx"></span>
-                               <img src="../img/cy.png" alt="" class="cyimg">
+                                <span class="yumoney">我的测币 : <input class="inputer" type="text" value="xx"></span>
+                                <img src="../img/cy.png" alt="" class="cyimg">
                             </div>
                         </div>
                         <div class="cebtransvter">
@@ -153,7 +160,7 @@
                         <li class="cjtime">创建时间</li>
                         <li class="states">状态</li>
                         <li class="payto">支付倒计时</li>
-                    </ul> 
+                    </ul>
                     <ul class="paystate">
                         <li class="borderli">
                             <ul class="hangli">
@@ -187,8 +194,11 @@
                         </li>
                     </ul>
                     <!-- 分页 -->
-                   <div class="customBootstrap customBootstrap1">
-                        <ul id="paging" class="pagination"></ul>
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging" class="pagination"></ul>
+                        </div>
                     </div>
                 </li>
                 <!-- 我的账单 -->
@@ -203,31 +213,33 @@
                             </ul>
                             <ul class="bills">
                                 <li>账户测币:100000<img src="../img/cy.png" alt="" class="moneyimgcy"></li>
-                                <li>已消耗测币总数: <span class="cbillred">1000000</span><img src="../img/cy.png" alt="" class="moneyimgcy"></li>
+                                <li>已消耗测币总数: <span class="cbillred">1000000</span><img src="../img/cy.png" alt=""
+                                        class="moneyimgcy"></li>
                             </ul>
                         </div>
                         <div class="contime">
                             <div class="startime">
-                                <span> 开始时间<span class="maohao">:</span></span> 
+                                <span> 开始时间<span class="maohao">:</span></span>
                                 <p class="dataxj">
                                     <img src="../img/reqi.png" alt="" class="reqimg">
                                     <input type="text" class="datainput" value="2019-01-21">
                                     <img src="../img/sanzuo.png" alt="" class="leftjian">
                                     <img src="../img/sanyou.png" alt="" class="rightjian">
-                                </p>                            
+                                </p>
                             </div>
                             <div class="startime">
-                                <span>结束时间<span class="maohao">:</span></span>  
+                                <span>结束时间<span class="maohao">:</span></span>
                                 <p class="dataxj">
                                     <img src="../img/reqi.png" alt="" class="reqimg">
                                     <input type="text" class="datainput" value="2019-01-21">
                                     <img src="../img/sanzuo.png" alt="" class="leftjian">
                                     <img src="../img/sanyou.png" alt="" class="rightjian">
-                                </p>                            
+                                </p>
                             </div>
                             <div class="leitype">
                                 类型<span class="maohao">:</span>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                     <label class="select select-type"></label>
                                     <span class="caret"></span>
                                 </button>
@@ -254,26 +266,30 @@
                             <li class="cjtime">监控消耗</li>
                             <li class="states">状态</li>
                             <li class="payto">总消耗/剩余测币</li>
-                        </ul> 
+                        </ul>
                         <ul class="up-older">
                             <li class="borderli">
                                 没有找到数据
                             </li>
                         </ul>
-                         
+
                     </div>
-                     <!-- 分页 -->
-                     <div class="customBootstrap customBootstrap1">
-                        <ul id="paging-id" class="pagination"></ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                        </div>
                     </div>
-                     <!-- 收支明细弹出框 -->
-                     <div class="popup-recharge">
+                    <!-- 收支明细弹出框 -->
+                    <div class="popup-recharge">
                         <div class="popup-box payment-box">
                             <p class="popup-name">收支明细导出</p>
                             <span class="delet-x">X</span>
                             <div class="leitype pay-type">
                                 交易类型<span class="maohao">:</span>
-                                <button type="button" class="btn btn-default dropdown-toggle pay-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn btn-default dropdown-toggle pay-button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <label class="select select-type-d"></label>
                                     <span class="caret"></span>
                                 </button>
@@ -292,30 +308,30 @@
                             </ul>
                             <div class="start-end-time">
                                 <div class="startime payment-time">
-                                    <span class="time-g"> 开始时间<span class="maohao">:</span></span> 
+                                    <span class="time-g"> 开始时间<span class="maohao">:</span></span>
                                     <p class="dataxj dataxj-g">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput payment-g" value="2019-01-21">
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </p>                            
+                                    </p>
                                 </div>
                                 <div class="startime payment-time">
-                                    <span class="time-g">至</span>  
+                                    <span class="time-g">至</span>
                                     <p class="dataxj dataxj-k">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput payment-g" value="2019-01-21">
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </p>                            
-                                </div> 
-                            </div>  
+                                    </p>
+                                </div>
+                            </div>
                             <div class="verification">
                                 <span class="ver-span"> 验证码</span><span class="maohao">:</span>
                                 <input type="text" class="ver-input">
                                 <img src="../img/sanyou.png" alt="">
-                            </div> 
-                            <button type="button" class="export-d">确定充值</button>                  
+                            </div>
+                            <button type="button" class="export-d">确定充值</button>
                         </div>
                     </div>
                 </li>
@@ -326,51 +342,56 @@
                     </div>
                     <ul class="invoice-b">
                         <li id="invoice-message">发票信息管理</li>
-                        <li class="adrclass"  id="adrclass">发票寄送地址管理</li>
+                        <li class="adrclass" id="adrclass">发票寄送地址管理</li>
                         <li id="invoice-list">发票列表</li>
-                        <li class="invoice-s"  id="invoice-s">发票申请</li>
+                        <li class="invoice-s" id="invoice-s">发票申请</li>
                     </ul>
                     <div>
                         <!-- 发票寄送地址管理 -->
                         <div class="big-invoicebox" id="adrclass-id" style="display:block">
                             <div class="invoice-conbox">
-                                <p><span>选择地址</span><span>:</span><input type="text" value="某某省市某某去街道5号超市旁" disabled="disabled"></p>
-                                <p><span>邮政编码</span><span>:</span><input type="text" value="0000" disabled="disabled"></p>
-                                <p><span class="consignee-name">收货人姓名</span><span>:</span><input type="text" value="加工圈" disabled="disabled"></p>
+                                <p><span>选择地址</span><span>:</span><input type="text" value="某某省市某某去街道5号超市旁"
+                                        disabled="disabled"></p>
+                                <p><span>邮政编码</span><span>:</span><input type="text" value="0000" disabled="disabled">
+                                </p>
+                                <p><span class="consignee-name">收货人姓名</span><span>:</span><input type="text" value="加工圈"
+                                        disabled="disabled"></p>
                                 <div class="adr-bottom">
-                                    <p><span>手机号码</span><span>:</span><input type="text" value="13678234567" disabled="disabled"></p> 
+                                    <p><span>手机号码</span><span>:</span><input type="text" value="13678234567"
+                                            disabled="disabled"></p>
                                     <p class="change-delet">
                                         <button class="change-bton">修改</button>
                                         <button class="delet-bton">删除</button>
-                                    </p> 
+                                    </p>
                                 </div>
                             </div>
                             <button class="new-adrees">+新增地址</button>
                         </div>
                         <!-- 发票列表 -->
-                        <div  class="big-invoicebox"  id="invoice-list-id">
+                        <div class="big-invoicebox" id="invoice-list-id">
                             <div class="contime">
                                 <div class="startime">
-                                    <span> 开始时间<span class="maohao">:</span></span> 
+                                    <span> 开始时间<span class="maohao">:</span></span>
                                     <p class="dataxj">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput" value="2019-01-21">
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </p>                            
+                                    </p>
                                 </div>
                                 <div class="startime">
-                                    <span>结束时间<span class="maohao">:</span></span>  
+                                    <span>结束时间<span class="maohao">:</span></span>
                                     <p class="dataxj">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput" value="2019-01-21">
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </p>                            
+                                    </p>
                                 </div>
                                 <div class="leitype">
                                     类型<span class="maohao">:</span>
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
                                         <label class="select select-type"></label>
                                         <span class="caret"></span>
                                     </button>
@@ -418,13 +439,116 @@
                                     </ul>
                                 </li>
                             </ul>
-                             <!-- 发票列表分页 -->
+                            <!-- 发票列表分页 -->
                             <div class="customBootstrap customBootstrap1">
                                 <ul id="paging-invoice" class="pagination"></ul>
                             </div>
                         </div>
                         <!-- 发票信息管理 -->
-                        <div></div>
+
+                        <div class="big-invoicebox" id="invoice-message-id">
+                            <div class="in-type-messge">
+                                <div class="prot-flex invoice-flex">
+                                    <ul class="prot-names">
+                                        <li>发票抬头：</li>
+                                        <li>开具类型：</li>
+                                        <li>发票类型：</li>
+                                    </ul>
+                                    <ul class="prot-value">
+                                        <li>个人</li>
+                                        <li>
+                                            <button type="button" class="prot-type typeclass">个人</button>
+                                            <button type="button" class="prot-type">企业</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="prot-type typeclass">企业增值税专用发票</button>
+                                            <button type="button" class="prot-type">企业增值税普通发票</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="prot-submit">提&nbsp;交</button>
+                            </div>
+                            <!-- 发票类型选择 -->
+                            <div class="in-type-choice">
+                                <div class="prot-flex invoice-x">
+                                    <ul class="prot-names invoice-names">
+                                        <li>发票抬头：</li>
+                                        <li>开具类型：</li>
+                                        <li>发票类型：</li>
+                                        <li>税务登记证号：</li>
+                                        <li>基本开户银行名称：</li>
+                                        <li>基本开户账号：</li>
+                                        <li>注册场所地址：</li>
+                                        <li>注册固定电话：</li>
+                                    </ul>
+                                    <ul class="prot-value invoice-value">
+                                        <li><input type="text"></li>
+                                        <li>
+                                            <button type="button" class="prot-type typeclass">个人</button>
+                                            <button type="button" class="prot-type">企业</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="prot-type typeclass">企业增值税专用发票</button>
+                                            <button type="button" class="prot-type">企业增值税普通发票</button>
+                                        </li>
+                                        <li><input type="text"></li>
+                                        <li><input type="text"></li>
+                                        <li><input type="text"></li>
+                                        <li>
+                                            <button type="button"
+                                                class="btn btn-default dropdown-toggle invoic-province"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <label class="select invoice-li-d"></label>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu select-li-d">
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">湖南省</label>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">广东省</label>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">江西省</label>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">胡建省</label>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="btn btn-default dropdown-toggle invoice-county"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <label class="select invoice-type-li"></label>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu select-type-ul">
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">天河区</label>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <label class="select">白云区</label>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <input type="text" class="regis-adr" placeholder="街道">
+                                        </li>
+                                        <li><input type="text"></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="prot-submit choice-submit">提&nbsp;交</button>
+                            </div>
+                        </div>
+
                         <div></div>
                     </div>
                     <!-- 新增收货地址弹出框 -->
@@ -444,63 +568,64 @@
                                 <input type="text" name="" id="" class="consiname">
                             </div>
                             <div class="leitype pay-type">
-                                    <span class="f-right">邮编</span><span class="maohao">:</span>
+                                <span class="f-right">邮编</span><span class="maohao">:</span>
                                 <input type="text" name="" id="" class="consiname">
                             </div>
                             <input type="checkbox" checked="true" name="" id="" class="dagou">设为默认地址
                             <p class="popup-button">
                                 <button type="button">确定</button>
                                 <button type="button" class="canel">取消</button>
-                            </p>                
+                            </p>
                         </div>
                     </div>
                     <!-- 发票退票 -->
                     <div class="popup-recharge invoice-box-tan">
-                            <div class="popup-box payment-box">
-                                <p class="popup-name">发票退票</p>
-                                <div class="leitype">
-                                   <span><i>*</i> 退票原因</span><span class="maohao">:</span>
-                                    <button type="button" class="btn btn-default dropdown-toggle consiname" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <label class="select select-type"></label>
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu mes-typecli">
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <label class="select">http</label>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <label class="select">ping</label>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="leitype">
-                                    <span class="yun-note"><i>*</i> 备注</span><span class="maohao">:</span>
-                                    <input type="text" name="" id="" class="consiname">
-                                </div>
-                                <div class="leitype">
-                                    <span class="wliu"><i>*</i> 发票邮寄物流</span><span class="maohao">:</span>
-                                    <input type="text" name="" id="" class="consiname">
-                                </div>
-                                <div class="leitype">
-                                    <span class="yunumber"><i>*</i> 运单号</span><span class="maohao">:</span>
-                                    <input type="text" name="" id="" class="consiname">
-                                </div>
-                                <div class="in-textarea">
-                                   <p>邮寄地址<img src="../img/site.png" alt="" class="site"></p>
-                                   <p>地址：杭州市余杭区文一西路983号3楼</p>
-                                   <p>收件人：加工圈</p>
-                                   <p>电话：11111111</p>
-                                </div>
-                                <p class="popup-button">
-                                    <button type="button">退票</button>
-                                    <button type="button" class="canel">取消</button>
-                                </p>                
+                        <div class="popup-box payment-box">
+                            <p class="popup-name">发票退票</p>
+                            <div class="leitype">
+                                <span><i>*</i> 退票原因</span><span class="maohao">:</span>
+                                <button type="button" class="btn btn-default dropdown-toggle consiname"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <label class="select select-type"></label>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu mes-typecli">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <label class="select">http</label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <label class="select">ping</label>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="leitype">
+                                <span class="yun-note"><i>*</i> 备注</span><span class="maohao">:</span>
+                                <input type="text" name="" id="" class="consiname">
+                            </div>
+                            <div class="leitype">
+                                <span class="wliu"><i>*</i> 发票邮寄物流</span><span class="maohao">:</span>
+                                <input type="text" name="" id="" class="consiname">
+                            </div>
+                            <div class="leitype">
+                                <span class="yunumber"><i>*</i> 运单号</span><span class="maohao">:</span>
+                                <input type="text" name="" id="" class="consiname">
+                            </div>
+                            <div class="in-textarea">
+                                <p>邮寄地址<img src="../img/site.png" alt="" class="site"></p>
+                                <p>地址：杭州市余杭区文一西路983号3楼</p>
+                                <p>收件人：加工圈</p>
+                                <p>电话：11111111</p>
+                            </div>
+                            <p class="popup-button">
+                                <button type="button">退票</button>
+                                <button type="button" class="canel">取消</button>
+                            </p>
                         </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -510,4 +635,5 @@
     <script src="../js/jqPaginator.js"></script>
     <script src="./managenment-police.js"></script>
 </body>
+
 </html>

@@ -33,7 +33,7 @@
         <div class="contenleft">
             <div class="monpoints">
                 <img src="../img/police.png" alt="" class="montimg">
-                <span class="gneral">监&nbsp;控&nbsp;点&nbsp;概&nbsp;况</span>
+                <span class="gneral">报&nbsp;警&nbsp;管&nbsp;理</span>
             </div>
             <hr class="linehr">
             <p class="report reporte8">报警信息</p>
@@ -70,18 +70,48 @@
                     <li class="polie-in-li">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <label class="select select-type"></label>
+                            <label class="select select-type">全部</label>
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu mes-typecli">
                             <li>
                                 <a href="javascript:void(0)">
-                                    <label class="select">ID:15181</label>
+                                    <label class="select">全部</label>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)">
-                                    <label class="select">ID:15183</label>
+                                    <label class="select">不可用</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">速度异常</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">延时异常</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">文件大小不一致</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">返回码异常</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">MD5不一致</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">302劫持</label>
                                 </a>
                             </li>
                         </ul>
@@ -89,18 +119,23 @@
                     <li class="polie-in-li">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <label class="select select-type1"></label>
+                            <label class="select select-type1">全部</label>
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu mes-state1">
                             <li>
                                 <a href="javascript:void(0)">
-                                    <label class="select">ID:15181</label>
+                                    <label class="select">全部</label>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)">
-                                    <label class="select">ID:15183</label>
+                                    <label class="select">异常</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">恢复</label>
                                 </a>
                             </li>
                         </ul>
@@ -151,7 +186,10 @@
                 </ul>
                 <!-- 分页 -->
                 <div class="customBootstrap">
-                    <ul id="paging" class="pagination"></ul>
+                    <div class="customBootstrap-relvaer">
+                        <p>共100条</p>
+                        <ul id="paging" class="pagination"></ul>
+                    </div>
                 </div>
             </div>
 
@@ -175,7 +213,7 @@
                             <button type="button" class="demand">查&nbsp;询</button>
                             <button type="button" class="reset">重&nbsp;置</button>
                         </li>
-                    </ul>                    
+                    </ul>
 
                     <table>
                         <tr class="tr-head">
@@ -212,12 +250,15 @@
 
                     <!-- 分页 -->
                     <div class="customBootstrap">
-                        <ul id="paging1" class="pagination"></ul>
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging1" class="pagination"></ul>
+                        </div>
                     </div>
                 </div>
                 <!-- 新增的 -->
-                <div class="add-update">                    
-                    <div class="check-box">                                          
+                <div class="add-update">
+                    <div class="check-box">
                         <div class="check-flex">
                             <ul class="update-left">
                                 <li><span class="establish-red">*</span>任务名称</li>

@@ -78,12 +78,28 @@ $(function(){
     $('.pay-button').click(function(){
         $('.mes-typecli-d').show();
     })
-    //选择任务类型
+    //选择交易类型
     $(".mes-typecli-d").on('click','a',function(){        
         $(".select-type-d").text($(this).find("label").text());
         $('.mes-typecli-d').hide(); 
     });
-
+    
+    //选择省
+    $(".select-li-d").on('click','a',function(){        
+        $(".invoice-li-d").text($(this).find("label").text());
+        $(".select-li-d").hide()
+    });
+    //选择区县
+    $(".select-type-ul").on('click','a',function(){        
+        $(".invoice-type-li").text($(this).find("label").text());
+        $(".select-type-ul").hide()
+    });
+   $('.invoic-province').click(function(){
+    $(".select-li-d").show().siblings('.select-type-ul').hide();
+   });
+   $('.invoice-county').click(function(){
+    $(".select-type-ul").show().siblings('.select-li-d').hide();
+   })
     // 新增收货地址
     $('.new-adrees').click(function(){
         $('.new-adr-box').show();
@@ -117,5 +133,19 @@ $(function(){
     });
     $('.refund').click(function(){
         $('.invoice-box-tan').show();
+    });
+    //类型选择
+    $(".prot-type").click(function(){
+        $(this).addClass("typeclass").siblings().removeClass("typeclass");
+    })
+    
+    //提交
+    $(".prot-submit").click(function(){
+        $(".in-type-choice").show();
+        $('.in-type-messge').hide();
+    });
+    $('.invoice-b li').click(function(){
+        $(".in-type-choice").hide();
+        $('.in-type-messge').show();
     })
 })

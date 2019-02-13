@@ -105,7 +105,7 @@ $(function(){
         }else{
             $(".establish-http").hide();
             $(".establish-PING").show();            
-        }
+        }        
     })
     //左边导航的
     $(".report").click(function(){
@@ -119,4 +119,109 @@ $(function(){
             $(".centent-establish").show();
         }
     })
+    //
+    $(".start-time1").focus(function(){
+        $(this).siblings("#schedule-box").show();
+        $(this).siblings(".xkes").show();
+    })
+    $(".start-time2").focus(function(){
+        $(this).siblings("#schedule-box1").show();
+        $(this).siblings(".xkes1").show();
+    })
+    $(".start-time3").focus(function(){
+        $(this).siblings("#schedule-box3").show();
+        $(this).siblings(".xkes3").show();
+    })
+    $(".start-time4").focus(function(){
+        $(this).siblings("#schedule-box4").show();
+        $(this).siblings(".xkes4").show();
+    })
+    $(".start-time5").focus(function(){        
+        $(this).siblings("#schedule-box5").show();
+        $(this).siblings(".xkes5").show();
+    })
+    $(".start-time6").focus(function(){
+        $(this).siblings("#schedule-box6").show();
+        $(this).siblings(".xkes6").show();
+    })
+    //
+    $(".xkes").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box").hide();        
+    })
+    $(".xkes1").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box1").hide();        
+    })
+    $(".xkes3").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box3").hide();        
+    })
+    $(".xkes4").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box4").hide();        
+    })
+    $(".xkes5").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box5").hide();        
+    })
+    $(".xkes6").click(function(){
+        $(this).hide();
+        $(this).siblings("#schedule-box6").hide();        
+    })
 })
+
+var mySchedule = new Schedule({
+    el: '#schedule-box',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time1").val(y+'-'+m+'-'+d);
+    }    
+});
+var mySchedule = new Schedule({
+    el: '#schedule-box1',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time2").val(y+'-'+m+'-'+d);
+    }    
+});
+var mySchedule = new Schedule({
+    el: '#schedule-box3',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time3").val(y+'-'+m+'-'+d);
+    }    
+});
+var mySchedule = new Schedule({
+    el: '#schedule-box4',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time4").val(y+'-'+m+'-'+d);
+    }    
+});
+var mySchedule = new Schedule({
+    el: '#schedule-box5',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time5").val(y+'-'+m+'-'+d);
+    }    
+});
+var mySchedule = new Schedule({
+    el: '#schedule-box6',
+    //date: '2018-9-20',
+    clickCb: function (y,m,d) {        
+        console.log('clickCb','日期：'+y+'-'+m+'-'+d);
+        // document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d	
+        $(".start-time6").val(y+'-'+m+'-'+d);
+    }    
+});

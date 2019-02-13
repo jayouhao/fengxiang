@@ -157,14 +157,18 @@
                 </ul>
                 <!-- 分页 -->
                 <div class="customBootstrap">
-                    <ul id="paging" class="pagination"></ul>
+                    <div class="customBootstrap-relvaer">
+                        <p>共100条</p>
+                        <ul id="paging" class="pagination"></ul>
+                    </div>
                 </div>
             </div>
 
             <div class="centent centent-establish">
                 <p class="nav">首页>>任务管理>>创建任务</p>
                 <p class="establish-top">
-                    <button type="button" class="esta-but esta-but-blue">创建HTTP任务</button><button type="button" class="esta-but">创建PING任务</button>
+                    <button type="button" class="esta-but esta-but-blue">创建HTTP任务</button><button type="button"
+                        class="esta-but">创建PING任务</button>
                 </p>
                 <p class="establish-red establish-hint">带*的选项为必填项</p>
                 <!-- http的 -->
@@ -252,8 +256,16 @@
                         <li class="establish-hides"><input class="cookie" type="text"></li>
                         <li class="establish-hides"><input class="referer" type="text"></li>
                         <li class="establish-hides"><input class="agent" type="text"></li>
-                        <li class="establish-hides"><input type="text"></li>
-                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides heights">
+                            <input type="text" class="start-time start-time3">
+                            <img class="xkes3" src="../img/x.png" alt="">
+                            <div id='schedule-box3' class="boxshaw"></div>
+                        </li>
+                        <li class="establish-hides heights">
+                            <input type="text" class="start-time start-time4">
+                            <img class="xkes4" src="../img/x.png" alt="">
+                            <div id='schedule-box4' class="boxshaw"></div>
+                        </li>
                         <li class="checkbox-update establish-hides">
                             <label class="new-seek-one">
                                 <input type="checkbox" name="lsp" 1 value="电信">
@@ -368,12 +380,7 @@
                         <li class="establish-hides1">Domain：</li>
                         <li class="establish-hides1">Ping超时间：</li>
                         <li class="establish-hides1">包大小：</li>
-                        <li class="chang-du establish-hides1">发包数：</li>
-
-                        <!-- <li class="chang-du1 establish-hides">Cookie：</li>
-                        <li class="chang-du1 establish-hides">Referer：</li>
-                        <li class="chang-du2 establish-hides">user_agent：</li> -->
-
+                        <li class="chang-du establish-hides1 check-fabao09">发包数：</li>
                         <li class="establish-hides1">开始时间：</li>
                         <li class="endtime establish-hides1">结束时间：</li>
                         <li class="lsp establish-hides1"><span class="establish-red">*</span>lsp：</li>
@@ -441,11 +448,16 @@
                         <li class="establish-hides1"><input type="text"></li>
                         <li class="establish-hides1"><input type="text"></li>
                         <li class="establish-hides1"><input type="text"></li>
-                        <!-- <li class="establish-hides"><input class="cookie" type="text"></li>
-                        <li class="establish-hides"><input class="referer" type="text"></li>
-                        <li class="establish-hides"><input class="agent" type="text"></li> -->
-                        <li class="establish-hides1"><input type="text"></li>
-                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1 heights">
+                            <input type="text" class="start-time start-time1">
+                            <img class="xkes" src="../img/x.png" alt="">
+                            <div id='schedule-box' class="boxshaw"></div>
+                        </li>
+                        <li class="establish-hides1 heights">
+                            <input type="text" class="start-time start-time2">
+                            <img class="xkes1" src="../img/x.png" alt="">
+                            <div id='schedule-box1' class="boxshaw"></div>
+                        </li>
                         <li class="checkbox-update establish-hides1">
                             <label class="new-seek-one">
                                 <input type="checkbox" name="lsp" 1 value="电信">
@@ -677,8 +689,16 @@
                     <li><input class="cookie" type="text"></li>
                     <li><input class="referer" type="text"></li>
                     <li><input class="agent" type="text"></li>
-                    <li><input type="text"></li>
-                    <li><input type="text"></li>
+                    <li class="heights">
+                        <input type="text" class="start-time start-time5">
+                        <img class="xkes5" src="../img/x.png" alt="">
+                        <div id='schedule-box5' class="boxshaw"></div>
+                    </li>
+                    <li class="heights">
+                        <input type="text" class="start-time start-time6">
+                        <img class="xkes6" src="../img/x.png" alt="">
+                        <div id='schedule-box6' class="boxshaw"></div>
+                    </li>
                     <li class="checkbox-update">
                         <label class="new-seek-one">
                             <input type="checkbox" name="lsp" 1 value="电信">
@@ -803,6 +823,7 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/jqPaginator.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/schedule.js"></script>
     <script src="./task-management.js"></script>
 </body>
 

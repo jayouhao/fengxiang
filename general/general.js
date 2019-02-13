@@ -2,7 +2,8 @@ $(function(){
     // 最新监控告警的分页
     $('#paging').jqPaginator({
         //总页数
-        totalPages: 100,
+        totalPages: 100,                
+
         //显示多少个页码
         visiblePages: 5,
         //当前页

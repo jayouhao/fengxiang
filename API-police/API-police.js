@@ -16,4 +16,12 @@ $(function(){
         $(".prot-type1").removeClass("prot-type1");
         $(this).addClass("prot-type1");
     })
+    //个人认证资料
+    $(".remove-x").click(function(){
+        $(".popup-recharge").hide();
+    })
+    //提交
+    $(".prot-submit").click(function(){
+        $(".popup-recharge").show();
+    })
 })

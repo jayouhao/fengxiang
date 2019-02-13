@@ -283,6 +283,7 @@ body{
     font-weight: bold;
 }
 .maincontent{
+    min-height: 600px;
     width: 1200px;
     margin: auto;
     margin-top: 15px;
@@ -364,6 +365,7 @@ body{
     margin-bottom: 20px;
 }
 .centen-police{
+    min-height: 520px;
     padding: 20px;
     padding-right: 0;
     background: #fff;
@@ -403,6 +405,7 @@ body{
     height: 35px;
     margin-right: 35px;
     border-radius: 0;
+    text-align: left;
 }
 .polie-in-li .caret{
     color: #00A1EA;
@@ -782,12 +785,6 @@ table{
     background: #fff;   
     cursor: default; 
 }
-.remove-x{
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    cursor: pointer;
-}
 .remove-name{
     font-size: 18px;
     margin-bottom: 30px;
@@ -873,4 +870,20 @@ table{
 }
 .add-update .update-left{
     width: 160px;
+}
+.customBootstrap-relvaer{
+    display: inline-block;
+    position: relative;
+}
+.customBootstrap-relvaer p{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: -100px;
+    width: 92px;
+    text-align: center;
+    cursor: default;
+}
+.customBootstrap{
+    padding-left: 100px;
 }
