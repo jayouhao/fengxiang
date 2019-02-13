@@ -169,6 +169,10 @@ $(function(){
         $(this).hide();
         $(this).siblings("#schedule-box6").hide();        
     })
+    //点击设置
+    $(".data-set").click(function(){
+        location.href="../call-the-police/call-the-police.html?1";
+    })
 })
 
 var mySchedule = new Schedule({

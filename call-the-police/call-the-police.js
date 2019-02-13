@@ -1,6 +1,14 @@
-$(function () {
+$(function () {    
+    if(location.search.includes("?1")){
+        console.log($(".report").eq(1))
+        $(".reporte8").removeClass("reporte8");
+        $(".report").eq(1).addClass("reporte8");
+        $(".centen-police-message").hide();
+        $(".centen-police-set").show();
+        $(".update").show();        
+    }
     //左边导航的
-    $(".report").click(function () {
+    $(".report").click(function () { 
         $(".reporte8").removeClass("reporte8");
         $(this).addClass("reporte8");
         if($(this).text()=="报警信息"){
@@ -136,6 +144,7 @@ $(function () {
     //更新页面关闭
     $(".remove-x").click(function(){
         $(".update").hide();
+        location.search="";
     })
     //点击删除返回的
     $(".remove-base,.remove-x").click(function(){

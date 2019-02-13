@@ -630,6 +630,7 @@ body{
 }
 .data-set{
     left: 85%;
+    cursor: pointer;
 }
 .data-operationg{
     left: 91%;
