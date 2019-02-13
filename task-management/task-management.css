@@ -485,7 +485,7 @@ body{
 }
 .centent{
     padding: 20px;
-    min-height: 520px;
+    height: auto;
     padding-right: 0;
     background: #fff;
     border-radius: 6px;
@@ -507,6 +507,7 @@ body{
     top: 50%;
     margin-top: -11px;
     font-size: 16px;
+    text-align: center;
 }
 
 .mes-id{
@@ -611,22 +612,28 @@ body{
 }
 
 .data-id{
-    left: 2%;
+    left: 1%;
+    min-width: 75px;
 }
 .data-name{
-    left: 14.5%;
+    left: 12.5%;
+    min-width: 96px;
 }
 .data-address{
-    left: 26%;
+    left: 23%;
+    min-width: 230px;
 }
 .data-time{
-    left: 49%;
+    left: 48%;
+    min-width: 89px;
 }
 .data-type{
-    left: 62%;
+    left: 61.8%;
+    min-width: 36px;
 }
 .data-state{
-    left: 73%;
+    left: 72%;
+    min-width: 65px;
 }
 .data-set{
     left: 85%;

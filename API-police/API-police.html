@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="./API-police.css">
 </head>
+
 <body>
     <img src="../img/background.png" class="all-background" alt="">
     <div class="head">
@@ -34,9 +36,9 @@
                 <span class="gneral">A&nbsp;P&nbsp;I&nbsp;管&nbsp;理</span>
             </div>
             <hr class="linehr">
-            <p class="report reporte8">申请接口</p>
-            <p class="report">接口管理</p>
-            <p class="report">API监控记录</p>
+            <p class="report reporte8" id="cetnen-prot">申请接口</p>
+            <p class="report" id="interface-management">接口管理</p>
+            <p class="report" id="record">API监控记录</p>
         </div>
         <div class="contentright">
             <div class="conright-top">
@@ -44,13 +46,19 @@
                     <li>
                         <a href="../general/general.html"><img src="../img/survey-white.png" alt="">概况</a>
                     </li>
-                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a></li>
-                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a></li>
-                    <li class="backless"><a href="../API-police/API-police.html" class="gaik"><img src="../img/API-blue.png" alt="">API管理</a></li>
-                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png" alt="">自建监控点管理</a></li>
-                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png" alt="">财务管理</a></li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li class="backless"><a href="../API-police/API-police.html" class="gaik"><img
+                                src="../img/API-blue.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
                 </ul>
             </div>
+            <div>
             <div class="cetnen-prot">
                 <p class="nav">首页>>API管理>>申请接口</p>
                 <p class="prot-red">注：用户账户需满2000元才可申请接口</p>
@@ -58,7 +66,10 @@
                     <ul class="prot-names">
                         <li>用户名：</li>
                         <li>API密码：</li>
-                        <li>类型：</li>
+                        <!-- 未认证的 -->
+                        <li class="no-attestation">类型：</li>
+                        <!-- 已认证的 -->
+                        <li class="yes-attestation">认证类型：</li>
                         <li>申请接口用途：</li>
                     </ul>
                     <ul class="prot-value">
@@ -68,63 +79,188 @@
                             <button type="button" class="prot-but">复制</button>
                             <button type="button" class="prot-but">重新生成</button>
                         </li>
-                        <li>
+                        <!-- 未认证的 -->
+                        <li class="no-attestation">
                             <button type="button" class="prot-type">个人</button>
                             <button type="button" class="prot-type">企业</button>
+                        </li>
+                        <!-- 已认证的 -->
+                        <li class="yes-attestation yes-attestationcen">
+                            <img src="../img/check.png" alt="">
+                            你已经完成个人实名认证
                         </li>
                         <li>
                             <textarea class="prot-textarea" name="" id="" cols="30" rows="10"></textarea>
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="prot-submit">提&nbsp;交</button>                
+                <button type="button" class="prot-submit">提&nbsp;交</button>
             </div>
-        </div>
-    </div>
 
-      <!-- 个人认证资料弹出 -->
-      <div class="popup-recharge">
-        <div class="check-background"></div>
-        <div class="popup-box">
-            <p class="popup-name">个人认证资料</p>       
-            <div class="data-personage">
-                <ul class="personage-ul">
-                    <li>姓名：</li>
-                    <li>身份证号：</li>
-                    <li>身份证正面：</li>
-                    <li>身份证反面：</li>
-                    <li>手持身份证：</li>
-                </ul>
-                <ul class="personage-data-ul">
-                    <li><input type="text"></li>
-                    <li><input type="number"></li>
-                    <li class="name-databo">
-                        <div class="data-border">
-                            <img src="../img/make-money.png" alt="">
-                        </div>
-                        <span class="color-d">备注：身份证反面为（带头像的）</span>
+            <div class="interface-management">
+                <p class="nav">首页>>API管理>>接口管理</p>
+                <div class="prot-flex">
+                    <ul class="prot-names">
+                        <li>接口状态：</li>
+                        <li>测币余额：</li>
+                        <li>监控类型：</li>
+                        <li>开始时间：</li>
+                        <li>结束时间：</li>
+                    </ul>
+                    <ul class="prot-value">
+                        <li>
+                            <span class="interface-blue">正常</span>
+                            <span class="prot-password">sdf342kldfhg</span>
+                            <button type="button" class="prot-but">复制</button>
+                            <button type="button" class="prot-but">重新生成</button>
+                        </li>
+                        <li>
+                            <span class="interface-money">200</span>
+                            <img src="../img/cy.png" class="interface-cy" alt="">
+                        </li>
+                        <li class="replaver-api">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type1"></label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-state1">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">全部</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">异常</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">恢复</label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dataxj-relava">
+                            <p class="dataxj">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput" value="2019-01-21">
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </p>
+                            <input type="text" class="input-value" value="11:22">
+                        </li>
+                        <li class="dataxj-relava">
+                            <p class="dataxj">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput" value="2019-01-21">
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </p>
+                            <input type="text" class="input-value" value="11:22">
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="apl-submit">查&nbsp;询</button>
+            </div>
+
+
+            <div class="record">
+                <p class="nav">首页>>API管理>>API监控记录</p>
+                <ul class="record-top">
+                    <li class="record-li1">ID <input type="text" class="record-id"></li>
+                    <li class="record-namesj">
+                        <span>开始时间</span>
+                        <p class="dataxj">
+                            <img src="../img/reqi.png" alt="" class="reqimg">
+                            <input type="text" class="datainput" value="2019-01-21">
+                            <img src="../img/sanzuo.png" alt="" class="leftjian">
+                            <img src="../img/sanyou.png" alt="" class="rightjian">
+                        </p>
                     </li>
-                    <li class="name-databo">
-                        <div class="data-border">
-                            <p class="data-add">+</p>
-                            <p class="data-name">点击上传</p>
-                        </div>
-                        <span class="color-d">备注：身份证反面为（带头像的）</span>
+                    <li class="record-namesj">
+                        <span>结束时间</span>
+                        <p class="dataxj">
+                            <img src="../img/reqi.png" alt="" class="reqimg">
+                            <input type="text" class="datainput" value="2019-01-21">
+                            <img src="../img/sanzuo.png" alt="" class="leftjian">
+                            <img src="../img/sanyou.png" alt="" class="rightjian">
+                        </p>
+                    </li>
+                    <li class="dataxj-relava record-type">
+                        监控类型
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type2"></label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-state1">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">全部</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">异常</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">恢复</label>
+                                    </a>
+                                </li>
+                            </ul>
                     </li>
                     <li>
-                        <div class="data-border">
-                            <p class="data-add">+</p>
-                            <p class="data-name">点击上传</p>
-                        </div>                    
+                        <button class="apl-submit record-button" type="button">查&nbsp;询</button>
                     </li>
                 </ul>
-            </div>     
-            <button type="button" class="data-submit">提&nbsp;&nbsp;&nbsp;交</button>
-            <img class="remove-x" src="../img/x.png" alt="">
+
+                <ul class="police-list-name">
+                        <li>ID</li>
+                        <li>测试URL</li>
+                        <li>测试类型</li>
+                        <li>测试时间</li>
+                        <li>请求总数</li>                        
+                    </ul>
+                    <ul class="police-list-data">
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>1</li>
+                                <li>大大师傅大师傅大师傅</li>
+                                <li>32</li>
+                                <li>士大夫</li>
+                                <li>对</li>                                
+                            </ul>
+                        </li>
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>1</li>
+                                <li>大师傅</li>
+                                <li>32</li>
+                                <li>士大夫</li>
+                                <li>对</li>            
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging" class="pagination"></ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
         </div>
     </div>
-
     <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
     <script src="./API-police.js"></script>
 </body>
+
 </html>

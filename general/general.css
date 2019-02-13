@@ -576,12 +576,13 @@ svg{
     position: absolute;
     top: 50%;
     margin-top: -12px;
+    text-align: center;  
 }
 .ip-id{
     left: 5%;
 }
 .ip-ip{
-    left: 18%;
+    left: 19%;
 }
 .ip-time{
     left: 43%;
@@ -605,7 +606,8 @@ svg{
     margin: 0; 
 }
 .data-id{
-    left: 3.5%;
+    left: 0;
+    min-width: 104px;
 }
 .data-state{
     left: 69%;
@@ -626,7 +628,7 @@ svg{
     left: 3%;
 }
 .api-url{
-    left: 20%;
+    left: 21%;
 }
 .api-state{
     left: 72.5%;
@@ -636,6 +638,12 @@ svg{
 }
 .api-list{
     height: 374px;
+}
+.ip-state-type{
+    left: 65.2%;
+}
+.ip-operation01 {
+    left: 86%;
 }
 
 
@@ -752,4 +760,20 @@ input{
     width: 92px;
     text-align: center;
     cursor: default;
+}
+.ip-ip1{
+    left: 12%;
+    min-width: 230px;
+}
+.ip-time1{
+    min-width: 95px;
+    left: 42%;
+}
+.data-state1{
+    min-width: 70px;
+    left: 67%;
+}
+.ip-operation1{
+    min-width: 70px;
+    left: 86%;
 }

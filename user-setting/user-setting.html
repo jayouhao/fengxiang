@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="./user-setting.css">
 </head>
+
 <body>
     <img src="../img/background.png" class="all-background" alt="">
     <div class="head">
@@ -42,28 +44,54 @@
                     <li>
                         <a href="../general/general.html"><img src="../img/survey-white.png" alt="">概况</a>
                     </li>
-                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a></li>
-                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a></li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
                     <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
-                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png" alt="">自建监控点管理</a></li>
-                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png" alt="">财务管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
                 </ul>
             </div>
             <div class="cetnen-prot">
-                <p class="nav">设置>>用户设置>>实名认证</p>     
-                <div class="centen-cen">
+                <p class="nav">设置>>用户设置>>实名认证</p>
+                <!-- 个人用户完成认证的 -->
+                <div class="centen-cen personage-attestation">
                     <img class="centen-user" src="../img/portrait.png" alt="">
                     <img class="centen-check" src="../img/check.png" alt="">
                     <div>
                         <p class="centen-top">
                             您已完成测域个人实名认证
-                            <a href="#">升级为企业认证>></a>                            
+                            <a href="#">升级为企业认证>></a>
                         </p>
                         <p class="centen-name">真实姓名：**域</p>
                         <p class="centen-phon">证件号码：340******119</p>
-                    </div>                    
+                    </div>
                 </div>
-                <button type="button" class="setting-submit">返&nbsp;&nbsp;回</button>                      
+                <!-- 个人用户完成认证的 -->
+                <button type="button" class="setting-submit personage-attestation">返&nbsp;&nbsp;回</button>
+
+                <!-- 企业成认证的 -->
+                <div class="centen-cen firm-attestation">
+                    <img class="centen-user" src="../img/self-build-background1.png" alt="">
+                    <img class="centen-check" src="../img/check.png" alt="">
+                    <div>
+                        <p class="centen-top">
+                            您已完成测域企业认证                         
+                        </p>
+                        <p class="centen-name">法人姓名：**域</p>
+                        <p class="centen-phon">证件号码：340******119</p>
+                        <p class="centen-phon">统一社会信用代码：30******H</p>
+                    </div>
+                </div>
+                <!-- 企业成认证的 -->
+                <p class="firm-button firm-attestation">
+                    <button type="button" class="firm-submit">返&nbsp;&nbsp;回</button>
+                    <button type="button" class="firm-submit">修&nbsp;&nbsp;改</button>
+                </p>                
+
                 <div class="bottom">
                     <img src="../img/user-setting-left.png" alt="">
                     <img src="../img/user-setting.png" alt="">
@@ -71,9 +99,183 @@
             </div>
         </div>
     </div>
-      
+
+    <!-- 个人认证资料 弹出 -->
+    <div class="popup-recharge">
+        <div class="check-background"></div>
+        <div class="popup-box">
+            <p class="popup-name">个人认证资料</p>
+            <div class="data-personage">
+                <ul class="personage-ul">
+                    <li>姓名：</li>
+                    <li>身份证号：</li>
+                    <li>身份证正面：</li>
+                    <li>身份证反面：</li>
+                    <li>手持身份证：</li>
+                </ul>
+                <ul class="personage-data-ul">
+                    <li><input type="text"></li>
+                    <li><input type="number"></li>
+                    <li class="name-databo">
+                        <div class="data-border">
+                            <img src="../img/make-money.png" alt="">
+                        </div>
+                        <span class="color-d">备注：身份证反面为（带头像的）</span>
+                    </li>
+                    <li class="name-databo">
+                        <div class="data-border">
+                            <p class="data-add">+</p>
+                            <p class="data-name">点击上传</p>
+                        </div>
+                        <span class="color-d">备注：身份证反面为（带头像的）</span>
+                    </li>
+                    <li>
+                        <div class="data-border">
+                            <p class="data-add">+</p>
+                            <p class="data-name">点击上传</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="data-submit">提&nbsp;&nbsp;&nbsp;交</button>
+            <img class="remove-x" src="../img/x.png" alt="">
+        </div>
+    </div>
+
+    <!-- 个人信息 弹出-->
+    <div class="popup-message">
+        <div class="check-background"></div>
+        <div class="message-box">
+            <p class="message-name">个人信息</p>
+            <div class="data-personage message-personage">
+                <ul class="message-name-ul">
+                    <li>真实姓名：</li>
+                    <li>身份证号：</li>
+                    <li>认证地区：</li>
+                </ul>
+                <ul class="message-value">
+                    <li>*域</li>
+                    <li>3**********88</li>
+                    <li>中国大陆</li>
+                </ul>
+            </div>
+             <p class="message-his">
+                 恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+             </p>       
+             <p class="message-button">
+                <button type="button" class="message-confirm">确&nbsp;&nbsp;定</button>
+                <button type="button" class="message-amend">修改认证</button>
+             </p>
+            <img class="message-remove-x" src="../img/x.png" alt="">
+        </div>
+    </div>
+
+    <!-- 企业信息 弹出-->
+    <div class="firm-message">
+        <div class="check-background"></div>
+        <div class="message-box">
+            <p class="message-name">企业信息</p>
+            <div class="data-personage message-personage">
+                <ul class="message-name-ul">
+                    <li>真实姓名：</li>
+                    <li>身份证号：</li>
+                    <li>认证地区：</li>
+                </ul>
+                <ul class="message-value">
+                    <li>*域</li>
+                    <li>3**********88</li>
+                    <li>中国大陆</li>
+                </ul>
+            </div>
+             <p class="message-his">
+                 恭喜，您已完成测域企业认证。如果您的认证信息发生变更，可修改认证。
+             </p>       
+             <p class="message-button">
+                <button type="button" class="message-confirm">确&nbsp;&nbsp;定</button>
+                <button type="button" class="message-amend">修改认证</button>
+             </p>
+            <img class="firm-message-remove" src="../img/x.png" alt="">
+        </div>
+    </div>
+
+    <!-- 提示 弹出-->
+    <div class="popup-hint">
+        <div class="check-background"></div>
+        <div class="message-box hint-box">
+            <p class="message-name">提&nbsp;&nbsp;示</p>   
+             <p class="hint-cen">
+                 恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                 恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+             </p>       
+             <p class="message-button hint-button">
+                <button type="button" class="hint-confirm">前往认证</button>
+                <button type="button" class="hint-amend">返&nbsp;&nbsp;回</button>
+             </p>            
+        </div>
+    </div>
+
+    <!-- 企业提示 弹出-->
+    <div class="firm-hint">
+        <div class="check-background"></div>
+        <div class="message-box hint-box">
+            <p class="message-name">提&nbsp;&nbsp;示</p>   
+             <p class="hint-cen">
+                 恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                 恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+             </p>       
+             <p class="message-button hint-button">
+                <button type="button" class="hint-confirm">前往升级认证</button>
+                <button type="button" class="firm-amend">返&nbsp;&nbsp;回</button>
+             </p>            
+        </div>
+    </div>
+
+    <!-- 企业认证资料 弹出 -->
+    <div class="firm-recharge">
+        <div class="check-background"></div>
+        <div class="popup-box">
+            <p class="popup-name">企业认证资料</p>
+            <div class="data-personage">
+                <ul class="personage-ul">
+                    <li>法人姓名：</li>
+                    <li>法人身份证号：</li>
+                    <li>统一社会信用代码：</li>
+                    <li>法人身份证正面：</li>
+                    <li>法人身份证反面：</li>
+                    <li>企业营业执照：</li>
+                </ul>
+                <ul class="personage-data-ul">
+                    <li><input type="text"></li>
+                    <li><input type="number"></li>
+                    <li><input type="text"></li>
+                    <li class="name-databo">
+                        <div class="data-border">
+                            <img src="../img/make-money.png" alt="">
+                        </div>
+                        <span class="color-d">备注：身份证正面为（带国徽的）其中身份证号码与填写号码一致。</span>
+                    </li>
+                    <li class="name-databo">
+                        <div class="data-border">
+                            <p class="data-add">+</p>
+                            <p class="data-name">点击上传</p>
+                        </div>
+                        <span class="color-d">备注：身份证反面为（带头像的）</span>
+                    </li>
+                    <li>
+                        <div class="data-border">
+                            <p class="data-add">+</p>
+                            <p class="data-name">点击上传</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="data-firm">提&nbsp;&nbsp;&nbsp;交</button>
+            <img class="firm-remove-x" src="../img/x.png" alt="">
+        </div>
+    </div>
 
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="./user-setting.js"></script>
 </body>
+
 </html>

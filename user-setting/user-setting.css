@@ -298,7 +298,8 @@ body{
     color: #D2D2D2;
     text-align: center;
 }
-.data-submit{
+.data-submit,
+.data-firm{
     font-size: 18px;
     color: #fff;
     width: 180px;
@@ -324,7 +325,9 @@ input::-webkit-inner-spin-button {
 input[type="number"]{
 -moz-appearance: textfield;
 }
-.remove-x{
+.remove-x,
+.firm-remove-x,
+.firm-message-remove{
     position: absolute;
     right: 15px;
     top: 10px;
@@ -382,4 +385,137 @@ input[type="number"]{
 }
 .bottom img{
     width: 49%;
+}
+
+
+.popup-message{
+    display: none;
+}
+.message-name{
+    font-size: 23px;
+    color: #00A2E8;
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    padding: 10px 0 20px 0;    
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.message-box{
+    width: 600px;
+    height: 300px;
+    padding: 0px 0px 20px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    box-shadow: 0 0 2px #fff;
+    cursor: default;
+    z-index: 6;
+    margin-bottom: 50px;
+}
+.message-remove-x{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.message-name-ul li{
+    margin-bottom: 20px;
+    font-size: 15px;   
+    margin-right: 10px;     
+}
+.message-value li{
+    color: #00A1EA;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.message-personage{
+    justify-content: center;
+}
+.message-his{
+    font-size: 15px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.message-button{
+    text-align: center;
+    width: 100%;
+}
+.message-button button{
+    color: #fff;
+    background: #F8B651;
+    width: 110px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.message-button .message-confirm{
+    background: #00A1EA;
+    margin-right: 60px;    
+}
+.message-button .hint-confirm{
+    background: #00A1EA;
+    margin-right: 60px;
+}
+.hint-cen{
+    padding: 0 5%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+}
+.hint-button{    margin-top: 50px;}
+.hint-box{
+    height: 250px;
+    margin-top: -125px;
+}
+.popup-hint{
+    display: none;
+}
+
+.firm-recharge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    display: none;    
+    z-index: 3;
+}
+.firm-recharge .personage-ul{
+    width: 190px;
+}
+.data-firm{
+    display: block;
+    margin: 40px auto;
+}
+
+/* 个人完成认证 */
+.personage-attestation{
+    display: none;
+}
+.firm-submit{
+    margin-top: 60px;
+    width: 100px;
+    height: 30px;
+    background: #00A1EA;
+    border-radius: 2px;
+    color: #fff;
+    margin-right: 90px;
+}
+.firm-submit:nth-child(2){
+    background: #F7B550;
+}
+.firm-button{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.firm-message{
+    display: none;
+}
+.firm-hint{
+    display: none;
 }

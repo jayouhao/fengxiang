@@ -365,7 +365,7 @@ body{
     margin-bottom: 20px;
 }
 .centen-police{
-    min-height: 520px;
+    height: auto;
     padding: 20px;
     padding-right: 0;
     background: #fff;
@@ -476,33 +476,43 @@ body{
     line-height: 40px;
     margin-top: -20px;    
     font-size: 15px;
+    text-align: center;
 }
 .police-list-datas li:nth-child(1){
-    left: 2.2%;
+    left: 0;
+    min-width: 56px;
 }
 .police-list-datas li:nth-child(2){
-    left: 10%;
+    left: 8%;
+    min-width: 90px;
 }
 .police-list-datas li:nth-child(3){
-    left: 24%;
+    left: 22.5%;
+    min-width: 70px;
 }
 .police-list-datas li:nth-child(4){
-    left: 36%;
+    left: 34.5%;
+    min-width: 90px;
 }
 .police-list-datas li:nth-child(5){
-    left: 48.6%;
+    left: 47.6%;
+    min-width: 60px;
 }
 .police-list-datas li:nth-child(6){
-    left: 59.5%;
+    left: 59%;
+    min-width: 60px;
 }
 .police-list-datas li:nth-child(7){
     left: 69%;
+    min-width: 84px;
 }
 .police-list-datas li:nth-child(8){
     left: 81%;
+    min-width: 50px;
 }
 .police-list-datas li:nth-child(9){
-    left: 93%;
+    left: 91%;
+    min-width: 65px;
 }
 .customBootstrap{
     margin-top: 50px;

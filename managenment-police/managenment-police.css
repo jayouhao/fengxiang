@@ -57,6 +57,7 @@ body{
 }
 .maincontent{
     width: 1200px;
+    min-height: 600px;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -670,10 +671,10 @@ pre code {
     cursor: pointer;
 }
 .datainput{
-    width: 85px;
+    width: 102px;
     position: absolute;
-    left: 60px;
-    top: 5px;    
+    left: 57px;
+    top: 5px;   
 }
 .leftjian{
     position: absolute;
@@ -729,6 +730,10 @@ pre code {
 .leitype{
     position: relative;   
     margin-right: 46px;
+}
+.leitype label{
+    position: relative;
+    top: -2px;
 }
 .query{
     width: 80px;
