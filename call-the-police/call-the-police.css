@@ -284,7 +284,7 @@ body{
 }
 .maincontent{
     min-height: 1058px;
-    width: 1200px;
+    width: 1740px;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -293,7 +293,7 @@ body{
 }
 .contenleft{
     background: rgba(0, 37, 160, 0.42);
-    width: 20%;
+    width: 270px;
     border-radius: 6px;
     cursor: default;
 }
@@ -317,7 +317,7 @@ body{
     margin-top: 5px;
 }
 .contentright{
-    width: 80%;
+    width: 85%;
 }
 .conright-top{
     background: #6082B6;
@@ -351,7 +351,7 @@ body{
 }
 .report{
     text-align: center;    
-    color: #fff;
+    color: #ffffffeb;
     font-size: 16px;
     cursor: pointer;
 }
@@ -364,6 +364,7 @@ body{
 }
 .nav{    
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .centen-police{
     min-height: 1058px;

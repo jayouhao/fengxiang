@@ -1,0 +1,157 @@
+p,span,button,input,div{
+    font-family: "微软雅黑";
+}
+.all-background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+body{    
+    min-width: 1200px;
+    background-color: unset;
+}
+.head{
+    width: 1180px;
+    padding: 0 10px;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+.logoimg{
+    height: 70px;
+}
+.headrigth-top,.headright-bot{
+    font-size: 16px;
+}
+.headrigth-top li{
+   float: left;
+   color: white;
+   margin-right: 40px;
+}
+.headrigth-top li:nth-of-type(5){
+    margin-right: 0;
+}
+.headright-bot{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+    color: white;
+}
+.headright-bot span{
+    line-height: 38px;
+}
+.addbuton{
+    background: #FEB500;
+    width: 124px;
+    height: 38px;
+    text-align: center;
+    font-weight: bold;
+}
+.maincontent{
+    width: 1200px;
+    min-height: 1058px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contenleft{
+    background: rgba(0, 37, 160, 0.42);
+    width: 20%;
+    border-radius: 6px;
+    cursor: default;
+}
+.monpoints{    
+    padding:20px 0px 10px 0px;
+}
+.montimg{
+    width: 25px;
+    margin-left: 34px
+}
+.gneral{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    position: relative;
+    top: 5px;
+}
+.linehr{
+    width: 200px;
+    border: 1px solid #6F92DF;
+    margin-top: 5px;
+}
+.report{
+    text-align: left;    
+    color: #ffffffeb;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 80px;
+}
+.reporte8{
+    color: #E8F024;
+}
+.contentright{
+    width: 80%;
+}
+.conright-top{
+    background: #6082B6;
+    height: 75px;
+    margin-top: -10px;
+    border-radius: 10px;
+    line-height: 75px;
+    padding-left: 20px;
+}
+.conright-nav li{
+    float: left;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+.conright-nav a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    height: 76px;
+    display: inline-block;
+}
+.conright-nav img{
+    margin-right: 10px;
+}
+.nav{    
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.cetnen{
+    min-height: 1058px;
+    padding: 20px;
+    padding-right: 0;
+    background: #fff;
+    border-radius: 6px;
+    cursor: default;
+    margin-top: 5px;    
+    position: relative;
+    padding-bottom: 164px;
+}
+.prompt{
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    position: relative;
+    top: -2px;
+}
+.prompt-top{
+    top: -12px;
+}
+.headrigth-top li{
+    cursor: pointer;
+}

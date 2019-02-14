@@ -232,7 +232,7 @@ p,span,button,input,div{
 }
 body{    
     min-width: 1200px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background-color: unset;
 }
 .head{
@@ -279,6 +279,7 @@ body{
 }
 .maincontent{
     min-width: 1200px;
+    min-height: 1058px;
     width: 73%;
     margin: auto;
     margin-top: 15px;
@@ -286,7 +287,7 @@ body{
     justify-content: space-between;
 }
 .contenleft{
-    background: #4264A4;
+    background: rgba(0, 37, 160, 0.42);
     width: 20%;
     border-radius: 6px;
     cursor: default;
@@ -307,7 +308,7 @@ body{
 }
 .linehr{
     width: 200px;
-    border: 1px solid #6F92DF;
+    border-top: 1px solid #6F92DF;
     margin-top: 5px;
 }
 .report{
@@ -353,6 +354,7 @@ body{
     text-decoration: none;
 }
 .centent{
+    min-height: 1058px;
     padding: 20px;
     padding-right: 0;
     background: #fff;
@@ -360,7 +362,7 @@ body{
     margin-top: 5px;
 }
 .nav{
-    font-size: 14px;
+    font-size: 16px;
     color: #434343;
     margin-bottom: 45px;
     cursor: default;

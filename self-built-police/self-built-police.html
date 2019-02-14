@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="./self-built-police.css">
 </head>
+
 <body>
+    <img src="../img/background.png" class="all-background" alt="">
     <div class="head">
         <img src="../img/logo.png" alt="" class="logoimg">
         <div class="headright">
@@ -29,11 +32,14 @@
     <div class="maincontent">
         <div class="contenleft">
             <div class="monpoints">
-                <img src="../img/monitoring.png" alt="" class="montimg">
-                <span class="gneral">监控点概况</span>
+                <img src="../img/business.png" alt="" class="montimg">
+                <span class="gneral">自建监控点管理</span>
             </div>
             <hr class="linehr">
-            <p class="report">监测报告</p>
+            <p class="report reporte8" id="centent-node">添加节点</p>
+            <p class="report" id="centent-my-node">我的节点</p>
+            <p class="report" id="centent-my-node1">自建监控点任务列表</p>
+            <p class="report" id="centent-node-general">自建监控点概况</p>
         </div>
         <div class="contentright">
             <div class="conright-top">
@@ -41,14 +47,369 @@
                     <li>
                         <a href="../general/general.html"><img src="../img/survey-white.png" alt="">概况</a>
                     </li>
-                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a></li>
-                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a></li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
                     <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
-                    <li class="backless"><a href="../self-built-police/self-built-police.html" class="gaik"><img src="../img/business-blue.png" alt="">自建监控点管理</a></li>
-                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png" alt="">财务管理</a></li>
+                    <li class="backless"><a href="../self-built-police/self-built-police.html" class="gaik"><img
+                                src="../img/business-blue.png" alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
                 </ul>
+            </div>
+
+            <div>
+                <div class="centent centent-node">
+                    <p class="nav">首页>>自建监控点管理>>添加节点</p>
+                    <div class="self-inputs">
+                        <span class="self-token">添加Token：</span>
+                        <input type="text" class="self-input">
+                        <button type="button" class="self-button self-add">添&nbsp;加</button>
+                        <button type="button" class="self-button">重&nbsp;置</button>
+                    </div>
+                    <img class="self-back" src="../img/self-build-background.png" alt="">
+                    <img class="self-rigbackgr" src="../img/self-build-background1.png" alt="">
+                </div>
+
+                <div class="centent centent-my-node">
+                    <p class="nav">首页>>自建监控点管理>>我的节点</p>
+                    <div class="my-atlas">
+                        <img src="../img/node-background.png" alt="">
+                    </div>
+                    <ul class="police-list-name">
+                        <li>运营商</li>
+                        <li>区域</li>
+                        <li>节点名称</li>
+                        <li>系统状态</li>
+                        <li>启用状态</li>
+                        <li>在线时长</li>
+                        <li>更新时间</li>
+                    </ul>
+                    <ul class="police-list-data">
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅大师傅大师傅</li>
+                                <li>主机名</li>
+                                <li>士大夫</li>
+                                <li>士大夫对</li>
+                                <li>大师傅对</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅大师傅大师傅</li>
+                                <li>主机名</li>
+                                <li>士大夫</li>
+                                <li>士大夫对</li>
+                                <li>大师傅对</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="centent centent-my-node1">
+                    <p class="nav">首页>>自建监控点管理>>自建监控点任务列表</p>
+                    <ul class="police-list-name">
+                        <li>请求URL</li>
+                        <li>请求类型</li>
+                        <li>是否请求完成</li>
+                        <li>创建时间</li>
+                    </ul>
+                    <ul class="police-list-data">
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师</li>
+                                <li>主机名</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅</li>
+                                <li>主机名</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap-my-node1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging" class="pagination"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centent centent-node-general">
+                    <p class="nav general-nav">首页>>监控点概况</p>
+                    <div class="general-value">
+                        <p class="recharge">充&nbsp;&nbsp;&nbsp;&nbsp;值</p>
+                        <div class="recharge-box">
+                            <div class="recharge-user">
+                                <p class="recharge-head">
+                                    <img src="../img/user.png" alt="">
+                                    用户名
+                                </p>
+                                <p class="sum">余额：&nbsp;<span>100.00RMB</span></p>
+                                <p class="sequencing">测币余额：&nbsp;<span>109</span><img src="../img/cy.png" alt=""></p>
+                                <button tyle="button" class="recharge-button">充&nbsp;值</button>
+                            </div>
+                            <div class="transverter">
+                                <div class="transverter-cen">
+                                    <p class="transverter-top"><span>转换器</span>1元=100测币</p>
+                                    <p class="arrows">
+                                        <input type="number">
+                                        <span class="yuan">元</span>
+                                        <img src="../img/arrows.png" alt="">
+                                        <span class="blue">100</span>&nbsp;<span class="bi">测币</span><br>
+                                    </p>
+                                    <button type="button" class="transverter-button">兑换</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general-api">
+                        <p class="newest">API使用统计</p>
+                        <ul class="ip-title">
+                            <li class="ip-id api-id">监控ID</li>
+                            <li class="ip-ip api-url">监控URL</li>
+                            <li class="ip-time">监控时间</li>
+                            <li class="ip-state ip-state-type">接口请求类型</li>
+                            <li class="ip-operation ip-operation01">接口次数</li>
+                        </ul>
+                        <ul class="data-list api-list">
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="paging-api" class="pagination"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="node-show">
+                        <div class="node-show-img"><img src="../img/node-background.png" alt=""></div>
+                        <ul class="node-show-hint">
+                            <li><span></span>差</li>
+                            <li><span></span>警告</li>
+                            <li><span></span>较好</li>
+                            <li><span></span>好</li>
+                        </ul>
+                        <p class="node-show-name">
+                            节点显示区
+                        </p>
+                        <ul class="detail-title">
+                            <li>运营商</li>
+                            <li>节点省份</li>
+                            <li>节点市区</li>
+                            <li>主机名</li>
+                            <li>系统状态</li>
+                            <li>运行时间</li>
+                        </ul>
+                        <ul class="fox-d">
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>123456788</li>
+                                    <li>产品名称</li>
+                                    <li>订单</li>
+                                    <li>2019-1-2</li>
+                                    <li>￥2000.00</li>
+                                    <li>￥2000.00</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="lists-paing" class="pagination"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+    <!-- 添加节点 弹出 -->
+    <div class="popup-recharge node-box">
+        <div class="check-background"></div>
+        <div class="popup-box">
+            <p class="popup-name">添加节点</p>
+            <img class="node-remove-x remove-x" src="../img/x.png" alt="">
+            <div class="self-file">
+                <ul class="node-name">
+                    <li>节点：</li>
+                    <li>运营商：</li>
+                    <li>省份：</li>
+                    <li>城市：</li>
+                </ul>
+                <ul class="node-value">
+                    <li class="node-value-li node-value-li1">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type1"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="node-value-li node-value-li2">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type2"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="distpicker">
+                        <div data-toggle="distpicker">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="node-submit">提&nbsp;&nbsp;交</button>
+        </div>
+    </div>
+
+    <!-- 节点提示 弹出-->
+    <div class="node-hint">
+        <div class="check-background"></div>
+        <div class="message-box hint-box">
+            <p class="hint-cen">
+                【个人实名认证。如果您的认证信息发生变更，可修改认证。
+                恭喜，您已完成测域个人实名认证。如果您】
+            </p>
+            <p class="message-button hint-button">
+                <button type="button" class="node-hint-button">确&nbsp;&nbsp;定</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="../js/distpicker.data.min.js"></script>
+    <script src="../js/distpicker.min.js"></script>
+    <script src="./self-built-police.js"></script>
 </body>
+
 </html>

@@ -290,14 +290,15 @@ body{
 }
 .maincontent{
     width: 1200px;
-    min-height: 600px;
+    min-height: 1058px;
     margin: auto;
+    margin-bottom: 20px;    
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
 .contenleft{
-    background: #4264A4;
+    background: rgba(0, 37, 160, 0.42);
     width: 20%;
     border-radius: 6px;
     cursor: default;
@@ -323,7 +324,7 @@ body{
 }
 .report{
     text-align: center;    
-    color: #fff;
+    color: #ffffffeb;
     font-size: 16px;
     cursor: pointer;
 }
@@ -365,9 +366,11 @@ body{
 }
 .nav{    
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .cetnen-prot{
     padding: 20px;
+    min-height: 1058px;
     padding-right: 0;
     background: #fff;
     border-radius: 6px;
@@ -452,6 +455,7 @@ body{
 }
 
 .interface-management{
+    min-height: 1058px;
     padding: 20px;
     padding-right: 0;
     background: #fff;
@@ -552,6 +556,7 @@ body{
 }
 
 .record{
+    min-height: 1058px;
     padding: 20px;
     padding-right: 0;
     background: #fff;

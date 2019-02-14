@@ -56,6 +56,7 @@ body{
 }
 .maincontent{
     width: 1200px;
+    min-height: 1058px;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -63,7 +64,7 @@ body{
     margin-bottom: 20px;
 }
 .contenleft{
-    background: #4264A4;
+    background: rgba(0, 37, 160, 0.42);
     width: 20%;
     border-radius: 6px;
     cursor: default;
@@ -90,7 +91,7 @@ body{
 }
 .report{
     text-align: center;    
-    color: #fff;
+    color: #ffffffeb;
     font-size: 16px;
     cursor: pointer;
 }
@@ -125,8 +126,10 @@ body{
 }
 .nav{    
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .cetnen-prot{
+    min-height: 1058px;
     padding: 20px;
     padding-right: 0;
     background: #fff;

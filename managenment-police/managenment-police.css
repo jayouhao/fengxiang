@@ -57,15 +57,16 @@ body{
 }
 .maincontent{
     width: 1200px;
-    min-height: 600px;
+    min-height: 1058px;
+    margin-bottom: 20px;
     margin: auto;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .contenleft{
-    /* height: 600px; */
-    background: #4264A4;
+    background: rgba(0, 37, 160, 0.42);
     width: 20%;
     border-radius: 6px;
     cursor: default;
@@ -131,7 +132,7 @@ body{
     color: #4264A4;
 }
 .whiteareacontent{
-    min-height: 600px;
+    min-height: 1058px;
     padding: 20px 0px;
     background: white;
     margin-top: 5px;
@@ -1387,8 +1388,11 @@ pre code {
     margin-left: 2%;
     background: white;
 }
+.invoice-lis:hover{
+    background: #18171721 !important;
+}
 .invoice-lis:nth-child(even){
-    background: #18171721;
+    background:#18171708;
 }
 #invoice-s-id .invoice-s-box,#invoice-s-id .lists-value-li{
     position: relative;
