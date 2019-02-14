@@ -283,15 +283,16 @@ body{
     font-weight: bold;
 }
 .maincontent{
-    min-height: 600px;
+    min-height: 1058px;
     width: 1200px;
     margin: auto;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .contenleft{
-    background: #4264A4;
+    background: rgba(0, 37, 160, 0.42);
     width: 20%;
     border-radius: 6px;
     cursor: default;
@@ -365,7 +366,7 @@ body{
     margin-bottom: 20px;
 }
 .centen-police{
-    height: auto;
+    min-height: 1058px;
     padding: 20px;
     padding-right: 0;
     background: #fff;

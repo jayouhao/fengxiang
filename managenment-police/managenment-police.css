@@ -131,10 +131,14 @@ body{
     color: #4264A4;
 }
 .whiteareacontent{
+    min-height: 600px;
     padding: 20px 0px;
     background: white;
     margin-top: 5px;
     border-radius: 10px;
+}
+ol, ul{
+    margin-bottom: 0px;
 }
 .tablearea{
     width: 98%;
@@ -355,9 +359,10 @@ body{
     margin-left: -450px;
     box-shadow: 0 0 2px #fff;
     cursor: default;
+    z-index: 4;
 }
 .popup-name{
-    font-size: 34px;
+    font-size: 24px;
     color: #00A2E8;
     width: 96%;
     margin-left: 2%;
@@ -428,6 +433,9 @@ body{
     font-size: 20px;
     margin-right: 60px;
     background: #00A1EA;
+}
+.invoice-box-tan,.person-detail{
+    background: none;
 }
 .popup-button .canel{
     background: #D2D2D2;
@@ -645,6 +653,23 @@ pre code {
     font-size: 16px;
     line-height: 60px;
 }
+ .contime .myquery{
+    width: 100px;
+    height: 31px;
+    margin-right: 42px;
+    color: white;
+    background: #00B5FF;
+    margin-top: -2px;
+} 
+.startime .conuntdown{
+    border: 1px solid #312e2e38;
+    width: 120px;
+    height: 31px;
+    margin-left: 10px;
+    margin-top: -1px;
+    text-align: center;
+    line-height: 30px;
+}
 .contime{
     margin: 40px 0px 0px 20px;
     font-size: 16px;
@@ -708,7 +733,7 @@ pre code {
 .dropdown-menu {
     position: absolute;
     top: 80%;
-    left: 42px;
+    left: 75px;
     z-index: 1000;
     display: none;
     float: left;
@@ -957,6 +982,32 @@ pre code {
     margin-top: 20px;
     margin-left: 100px;
 }
+.new-adr-box .payment-box .dropdown-toggle{
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 0;
+    margin-right: -20px;
+    text-align: right;
+}
+.new-adr-box .regis-adr{
+    height: 28px;
+    width: 218px;
+    margin-left: 20px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.new-adr-box .new-adr-province{
+    left: 136px;
+    top: 30px;
+}
+.new-adr-box .new-adr-city{
+    left: 244px;
+    top: 30px;
+}
+.new-adr-box .new-adr-area{
+    left: 349px;
+    top: 30px;
+}
 .fapolice .leitype{
     position: relative;
     left: 45px;
@@ -1037,7 +1088,7 @@ pre code {
     right:5%;
 }
 .st-data{
-    left: 3%;
+    left: 5%;
 }
 .st-money{
     left: 35.5%;
@@ -1056,6 +1107,18 @@ pre code {
 }
 .big-invoicebox{
     display: none;
+}
+.invoice-box-tan{
+    position: absolute;
+}
+.check-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 4;
 }
 .invoice-box-tan .popup-box{
     width: 658px;
@@ -1090,7 +1153,7 @@ pre code {
 .yun-note{
     margin-left: 35px;
 }
-.invoice-box-tan .mes-typecli{
+.invoice-box-tan .refund-reason{
     width: 70%;
     left: 115px;
     top: 95%;   
@@ -1198,6 +1261,13 @@ pre code {
     float: right;
     position: relative;
 }
+.invoice-value .caret{
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px dashed;
+}
 .select-li-d li,.select-type-ul li{
     margin-bottom: 0px;
 }
@@ -1215,7 +1285,7 @@ pre code {
 .invoice-x .dropdown-toggle{
     width: 120px;
     height: 28px;
-    text-align: left;
+    text-align: right;
     line-height: 14px;
     font-size: 12px;
 }
@@ -1244,4 +1314,162 @@ pre code {
 }
 .customBootstrap{
     padding-left: 100px;
+}
+.person-detail{
+    position: absolute;
+}
+.detail-bton{
+    display: flex;
+    justify-content:space-between;
+    width: 340px;
+    margin: auto;
+    margin-top: 48px;
+}
+.detail-bton button{
+    width: 120px;
+    height: 35px;
+    background: #00A1EA;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+}
+.detail-img{
+    margin-left: 85px;
+}
+.lists-box{
+    width: 1040px;
+    margin-left: -41%;
+}
+.lists-title{
+    height: 38px;
+    width: 96%;
+    margin-left: 2%;
+    background: #BDEBFE;
+    margin-top: -20px;
+}
+.lists-title li{
+    float: left;
+    margin-right: 1%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+}
+.detail-title{
+    height: 38px;
+    width: 96%;
+    margin-left: 2%;
+    background: #BDEBFE;
+    margin-top: -20px;
+}
+.detail-title li{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 60px;
+    line-height: 38px;
+    width: 16%;
+}
+.lists-return{
+    width: 120px;
+    height: 35px;
+    background: #00A1EA;
+    margin-left: 45%;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.invoice-s-box{
+    margin-top: 40px;
+}
+.invoice-lis{
+    height: 38px;
+    width: 96%;
+    margin-left: 2%;
+    background: white;
+}
+.invoice-lis:nth-child(even){
+    background: #18171721;
+}
+#invoice-s-id .invoice-s-box,#invoice-s-id .lists-value-li{
+    position: relative;
+}
+.invoice-s-box li,.lists-value-li li{
+    position: absolute;
+}
+.lists-value-li li{
+    float: left;
+    margin-right: 1%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+} 
+.checkli{
+    left: 2%;
+}
+.s-time{
+    left:5%;
+}
+.c-name{
+    left: 21%;
+}
+.c-type{
+    left:36%;
+}
+.older-time{
+    left: 48%;
+}
+.older-s-m{
+    left:68%;
+}
+.can-money{
+    left: 88%;
+}
+.older-money{
+    left: 69%;
+}
+.older-data{
+    left: 50%;    
+}
+.lists-detail .invoice-lis{
+    background: #a9a9a926;
+}
+.lists-detail .invoice-lis:nth-child(even){
+    background: white;
+}
+.lists-detail .lis-li li{
+    width: 16%;
+    float: left;
+    text-align: center;
+    padding-left: 60px;
+    line-height: 38px;
+}
+.apply-g{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+.apply-g,.apply-left{
+    display: flex;
+    justify-content: space-between;
+}
+.apply-left button{
+    font-size: 16px;
+    color: white;
+    height: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+.apply-bton-c{
+    width: 120px;
+    background: #8FC522;
+}
+.apply-bton-blue{
+    width: 200px;
+    background: #284898;
+    margin: 0px 10px;
+}
+.apply-left p{
+    font-size: 10px;
+    color: darkgrey;
+    line-height: 8px;
 }
