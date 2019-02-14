@@ -231,7 +231,7 @@ p,span,button,input,div{
     z-index: -1;
 }
 body{        
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: unset;
 }
 .head{
@@ -288,7 +288,7 @@ body{
     width: 15.23%;
     border-radius: 6px;
     cursor: default;
-    height: 1058px;
+    height: 962px;
 }
 .monpoints{    
     padding:20px 0px 10px 0px;
@@ -363,7 +363,7 @@ body{
 .nav{
     font-size: 16px;
     color: #434343;
-    margin-bottom: 45px;
+    margin-bottom: 18px;
     cursor: default;
 }
 .centent-ul{
@@ -379,7 +379,7 @@ body{
     height: 280px;
     border: 1px solid #00A1EA;
     float: left; 
-    margin-bottom: 30px;       
+    margin-bottom: 20px;       
 }
 .centent-li:nth-of-type(1),
 .centent-li:nth-of-type(3){
@@ -387,7 +387,7 @@ body{
 }
 .ip,
 .api{
-    height: 550px;
+    height: 500px;
 }
 
 
@@ -505,7 +505,7 @@ input[type="number"]{
     font-size: 26px;
     font-weight: bold;
     color: #00A1EA;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
     margin-top: 10px;
 }
 .newest-li{
@@ -551,6 +551,11 @@ input[type="number"]{
     height: 200px !important;
     margin-bottom: 30px;
     overflow: hidden;
+}
+.container12{
+    height: 156px;
+    overflow: hidden;
+    width: 100%;
 }
 .highcharts-container{
     margin-left: -3% !important;
@@ -618,7 +623,8 @@ svg{
     background: #ccc;
 }
 .customBootstrap1{
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
 }
 .api-id{
     left: 3%;
@@ -633,7 +639,7 @@ svg{
     left: 91%;
 }
 .api-list{
-    height: 374px;
+    height: 328px;
 }
 .ip-state-type{
     left: 65.2%;
