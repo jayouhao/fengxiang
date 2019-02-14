@@ -442,43 +442,37 @@ ol, ul{
     background: #D2D2D2;
 }
 .olderstate{
-    position: relative;
     border:1px solid #DCDCDC;
     width: 97%;
     height: 40px;
     font-size: 16px;
-    left: 20px;
+    margin-left: 20px;
 }
 .olderstate li{
-    position: absolute;
-    top: 10px;
+    float: left;
+    width: 16%;
+    padding-left: 29px;
+    line-height: 35px;
 }
-.olderhao{
-    left: 3%;
+.fox-ds{
+    display: none;
 }
-.topup-way{
-    left: 14%;
+.fox-ds .fox-li li{
+    width: 16%;
+    float: left;
+    padding-right: 50px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px;
 }
-.amounts{
-    left:28%;
+.fox-ds .fox-lis{
+    width: 97%;
 }
-.amountsred{
-    color: red;
+.fox-ds .fox-li .fox-data{
+    padding-right: 20px;
 }
-.numdata,.cjtimeblue,.wx-way{
-    color: #337ab7;
-}
-.cjtime{
-    left: 38%;
-}
-.states{
-    left:52%;
-}
-.payto{
-    right: 3%;
-}
-.numdata{
-    left: 2%;
+.fox-ds .fox-li .fox-hao{
+    padding-right: 0px;
 }
 .nopay{
     left: 51.5%;
@@ -523,6 +517,17 @@ ol, ul{
     font-size: 16px;
     position: absolute;
     top: 10px;
+}
+.no-data{
+    height: 82px;
+    border:1px solid #DCDCDC;
+    border-top: none;
+    font-size: 16px;
+    text-align: center;
+    color: #0190FF;
+    line-height: 82px;
+    width: 97%;
+    margin-left: 20px;
 }
 .yespay{
     color: #01AF6A;
@@ -1385,7 +1390,7 @@ pre code {
 .invoice-lis{
     height: 38px;
     width: 96%;
-    margin-left: 2%;
+    margin-left: 20px;
     background: white;
 }
 .invoice-lis:hover{
@@ -1434,13 +1439,13 @@ pre code {
 .older-data{
     left: 50%;    
 }
-.lists-detail .invoice-lis{
+.invoice-lis{
     background: #a9a9a926;
 }
-.lists-detail .invoice-lis:nth-child(even){
+.invoice-lis:nth-child(even){
     background: white;
 }
-.lists-detail .lis-li li{
+.lis-li li{
     width: 16%;
     float: left;
     text-align: center;
