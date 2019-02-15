@@ -241,6 +241,7 @@ body{
     display: flex;
     justify-content: space-between;
     cursor: default;
+    min-width: 1895px;
 }
 .logoimg{
     height: 70px;
@@ -281,6 +282,7 @@ body{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    min-width: 1895px;
 }
 .contenleft{
     background: rgba(0, 37, 160, 0.42);
