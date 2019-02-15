@@ -4,7 +4,7 @@
 }
 .wrap-bigbox{
     position: fixed;
-    min-height: 1016px;
+    height: 964px;
     top: 50%;
     margin-top: -508px;
 }
@@ -295,7 +295,7 @@ body{
     width: 15.23%;
     border-radius: 6px;
     cursor: default;
-    height: 876px;
+    height: 830px;
 }
 .monpoints{    
     padding:20px 0px 10px 0px;
@@ -304,7 +304,7 @@ body{
     margin-left: 34px
 }
 .gneral{
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     font-weight: bold;
     margin-left: 15px;
@@ -370,7 +370,7 @@ body{
 .nav{
     font-size: 16px;
     color: #434343;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     cursor: default;
 }
 .centent-ul{
@@ -386,7 +386,7 @@ body{
     height: 288px;
     border: 1px solid #00A1EA;
     float: left; 
-    margin-bottom: 30px;       
+    margin-bottom: 20px;       
 }
 .centent-li:nth-of-type(1),
 .centent-li:nth-of-type(3){
@@ -394,7 +394,7 @@ body{
 }
 .ip,
 .api{
-    height: 370px;
+    height: 360px;
 }
 
 
@@ -509,10 +509,10 @@ input[type="number"]{
 
 .newest{
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     color: #00A1EA;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     margin-top: 10px;
 }
 .newest-li{
