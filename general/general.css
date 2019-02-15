@@ -2,7 +2,12 @@
     background-color: #3aa9ff;
     border-color: #63b8f9
 }
-
+.wrap-bigbox{
+    position: fixed;
+    min-height: 1016px;
+    top: 50%;
+    margin-top: -508px;
+}
 .bs-navbar .navbar-brand {
     color: #fff
 }
