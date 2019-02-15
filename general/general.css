@@ -6,6 +6,9 @@
     position: fixed;
     height: 964px;
     top: 50%;
+    width: 1715px;
+    left: 50%;
+    margin-left: -857.5px;
     margin-top: -508px;
     transform: scale(0.9);
 }
@@ -242,7 +245,8 @@ body{
 }
 .head{
     width: auto;
-    padding: 0 370px 0 90px;
+    /* padding: 0 370px 0 90px; */
+    padding-right: 280px;
     margin: auto;
     padding-top: 30px;
     display: flex;
@@ -284,12 +288,12 @@ body{
 }
 .maincontent{    
     width: auto;
-    padding: 0 90px;
-    margin: auto;
+    /* padding: 0 90px; */
+    /* margin: auto; */
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    min-width: 1895px;
+    width: 1715px;
 }
 .contenleft{
     background: rgba(0, 37, 160, 0.42);
