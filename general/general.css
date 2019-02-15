@@ -232,12 +232,13 @@ p,span,button,input,div{
 }
 body{            
     background-color: unset;
+    padding-bottom: 10px;
 }
 .head{
     width: auto;
     padding: 0 370px 0 90px;
     margin: auto;
-    padding-top: 26px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     cursor: default;
@@ -279,7 +280,7 @@ body{
     width: auto;
     padding: 0 90px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     min-width: 1895px;
@@ -289,7 +290,7 @@ body{
     width: 15.23%;
     border-radius: 6px;
     cursor: default;
-    height: 947px;
+    height: 876px;
 }
 .monpoints{    
     padding:20px 0px 10px 0px;
@@ -359,13 +360,12 @@ body{
     background: #fff;
     border-radius: 6px;
     margin-top: 5px;
-    padding-bottom: 0;
-    padding-top: 16px;
+    padding-bottom: 0;    
 }
 .nav{
     font-size: 16px;
     color: #434343;
-    margin-bottom: 18px;
+    margin-bottom: 35px;
     cursor: default;
 }
 .centent-ul{
@@ -378,10 +378,10 @@ body{
 }
 .centent-li{
     width: 49%;
-    height: 270px;
+    height: 288px;
     border: 1px solid #00A1EA;
     float: left; 
-    margin-bottom: 20px;       
+    margin-bottom: 30px;       
 }
 .centent-li:nth-of-type(1),
 .centent-li:nth-of-type(3){
@@ -389,7 +389,7 @@ body{
 }
 .ip,
 .api{
-    height: 500px;
+    height: 370px;
 }
 
 
@@ -507,11 +507,11 @@ input[type="number"]{
     font-size: 26px;
     font-weight: bold;
     color: #00A1EA;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
     margin-top: 10px;
 }
 .newest-li{
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     position: relative;
 }
 .newest-garden{
@@ -558,6 +558,7 @@ input[type="number"]{
     height: 156px;
     overflow: hidden;
     width: 100%;
+    display: none;
 }
 .highcharts-container{
     margin-left: -3% !important;
@@ -600,6 +601,7 @@ svg{
     width: 96%;
     margin-left: 2%;
     height: 174px;
+    margin-bottom: 16px;
 }
 .data-list-cen{
     background: none;
@@ -641,7 +643,7 @@ svg{
     left: 91%;
 }
 .api-list{
-    height: 328px;
+    height: 174px;
 }
 .ip-state-type{
     left: 65.2%;
