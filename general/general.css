@@ -7,6 +7,7 @@
     height: 964px;
     top: 50%;
     margin-top: -508px;
+    transform: scale(0.9);
 }
 .bs-navbar .navbar-brand {
     color: #fff
