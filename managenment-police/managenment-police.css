@@ -475,7 +475,9 @@ ol, ul{
     padding-right: 0px;
 }
 .nopay{
-    left: 51.5%;
+    left: 53.5%;
+}
+.amountsred,.nopay{
     color: red;
 }
 .jxpay,.qxpay{
@@ -486,12 +488,14 @@ ol, ul{
     cursor: pointer;
 }
 .jxpay{
-    left: 60%;
+    left: 62%;
     background: #00A1EA;
+    margin-top: -4px;
 }
 .qxpay{
-    left: 72%;
+    left: 73%;
     background: #F09148;
+    margin-top: -4px;
 }
 .paytos{
     left: 86%;
@@ -528,6 +532,40 @@ ol, ul{
     line-height: 82px;
     width: 97%;
     margin-left: 20px;
+}
+.older-state-tilte{
+    height: 35px;
+    border: 1px solid #00000026;
+    width: 97%;
+    margin-left: 20px;
+    background: #40434461;
+    font-size: 16px;
+}
+.older-state-tilte li{
+    float: left;
+    width: 12%;
+    padding-left: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.numdata{
+   left: 4%;
+}
+.wx-way{
+    left: 16%;
+ }
+ .amountsred{
+    left: 30%;
+ }
+ .cjtimeblue{
+     left: 40%;
+ }
+ .numdata,.cjtimeblue,.wx-way{
+    color: #186d90ed;
+ }
+#older-id .older-state-tilte .payto{
+    width: 40%;
+    padding-left: 200px;
 }
 .yespay{
     color: #01AF6A;

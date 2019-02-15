@@ -230,15 +230,14 @@ p,span,button,input,div{
     left: 0;
     z-index: -1;
 }
-body{        
-    padding-bottom: 10px;
+body{            
     background-color: unset;
 }
 .head{
     width: auto;
     padding: 0 370px 0 90px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 28px;
     display: flex;
     justify-content: space-between;
     cursor: default;
@@ -288,7 +287,7 @@ body{
     width: 15.23%;
     border-radius: 6px;
     cursor: default;
-    height: 962px;
+    height: 947px;
 }
 .monpoints{    
     padding:20px 0px 10px 0px;
@@ -359,6 +358,7 @@ body{
     border-radius: 6px;
     margin-top: 5px;
     padding-bottom: 0;
+    padding-top: 16px;
 }
 .nav{
     font-size: 16px;
@@ -376,7 +376,7 @@ body{
 }
 .centent-li{
     width: 49%;
-    height: 280px;
+    height: 270px;
     border: 1px solid #00A1EA;
     float: left; 
     margin-bottom: 20px;       
