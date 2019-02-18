@@ -38,7 +38,8 @@ $(function(){
     })
 
     // 点击消息弹出框返回
-    $('.meg-return').click(function(){
+    $('.meg-return,.masge-delet').click(function(){
         $('.meg-tan-box').hide();
     })
+
 })
