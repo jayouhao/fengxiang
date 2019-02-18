@@ -298,7 +298,7 @@ p,span,button,input,div{
 
 .middle{
     width: 100%;
-    height: 980px;
+    /* height: 980px; */
     background: url("../img/self-build-background.png") repeat-x;
     background-size: 50% 80%;
     background-position-y: 93px;
@@ -316,7 +316,7 @@ p,span,button,input,div{
     width: 250px;
     margin-right: 10px;
 }
-.middle-left li{
+.middle-left .middle-select,.middle-left .middle-li-one{
     margin-bottom: 10px;
     width: 100%;
     display: flex;
@@ -366,18 +366,19 @@ p,span,button,input,div{
     background: #00A1EA;    
 }
 .middle-selecth{
-    height: 311px;
+    height:380px;
     background: #313131;
 }
 
 .middle-right{
     width: 940px;
-    height: 100%;    
+    min-height: 816px;    
     background: #fff;
 }
 .middle-right li{
     cursor: default;
 }
+
 .newest{
     width: 100%;
     height: 100%;    
@@ -703,4 +704,161 @@ textarea{
 .records p{
     text-align: center;
     margin-bottom: 2px;
+}
+.help-center-con {
+    background: white;
+    margin-top: -10px;
+    padding: 10px 10px;
+    width: 100%;
+}
+.help-center-con li{
+    padding: 8px 0px;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.help-ul img{
+    margin-right: 20px;
+}
+.help-ul a{
+    color: #757575;
+}
+.help-center-con a{
+    text-decoration: none;
+}
+.help-center-con .contas{
+    font-size: 12px;
+    color: #15161654;
+}
+.help-center-con li p{
+    text-align: center;
+    width: 100%;
+}
+.help-center-con .alit{
+    color: #70BCFF;
+}
+.lidiv{
+    margin-top: 20px;
+    display: none;
+}
+
+.help-main-top{
+    padding: 5px 0px;
+    background: white;
+    padding-left: 18px;
+    height: 30px;
+}
+.help-main-top input{
+    width: 792px;
+    border: 1px solid #2c2a2a29;
+    padding: 6px 0px 6px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.help-main-top button{
+    width: 100px;
+    padding: 8px 0px;
+    color: white;
+    background: #00A0E9;
+    font-size: 16px;
+}
+.help-main-li{
+    display: none;
+}
+.help-main-li li{
+    margin-top: 30px;
+}
+.help-main-li hr{
+    height: 10px;
+    background: #EBF2F7;
+    border: none;
+}
+.help-title-p{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #434343;
+}
+.help-title-p span,.produt-introd span{
+    width: 6px;
+    height: 22px;
+    background: #2BA7E2;
+    margin-right: 18px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+.help-source{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #434343c9;
+    margin: 10px 0px;
+    padding-left: 50px;
+}
+.help-whyp{
+    font-size: 20px;
+    color: #434343;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+.whyp-paragraph{
+    font-size: 15px;
+    color: #434343c9;
+    text-indent: 2em;
+    width: 95%;
+    padding-left: 50px;
+}
+.help-main-pading{
+    text-align: center;
+    margin-top: 20px;
+}
+.produt-introd,.router-p{
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.produt-introd-li{
+    display: none;
+   
+}
+.lostp{
+    border-bottom: 1px solid #ddddddfa;
+    padding-bottom: 30px;
+}
+.produt-introd{
+    font-size: 30px;
+    line-height: 30px;
+}
+.router-p{
+    font-size: 24px;
+}
+.produt-div{
+    width: 836px;
+    height: 288px;
+    margin: 30px 0px 10px;
+}
+.produt-div img{
+    width: 100%;
+    height: 100%;
+}
+.router-paragraph{
+    font-size: 18px;
+    color: #434343c9;
+    text-indent: 2em;
+    width: 95%;
+}
+.twopro{
+    padding: 20px 10px;
+}
+.inthe-pre{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.inthe-pre span,.pre-return{
+    color: skyblue;
 }

@@ -268,6 +268,10 @@ body{
 .headrigth-top li:nth-of-type(5){
     margin-right: 0;
 }
+.headrigth-top li:nth-of-type(4) a{
+    color: white;
+    text-decoration: none;
+}
 .headright-bot{
     float: right;
     display: flex;

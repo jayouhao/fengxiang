@@ -20,12 +20,34 @@
                 <li><img src="../img/me.png" alt=""> 昵称</li>
                 <li><img src="../img/change-password.png" alt=""> 修改密码</li>
                 <li><img src="../img/set.png" alt=""> 设置</li>
-                <li><img src="../img/information.png" alt=""> 消息中心<span class="prompt prompt-top">99+</span></li>
+                <li class="meg-click"><img src="../img/information.png" alt=""> 消息中心<span class="prompt prompt-top">99+</span></li>
                 <li><img src="../img/quit.png" alt=""> 退出</li>
             </ul>
             <div class="headright-bot">
                 <span>系统公告: xxxxxxxxxxxx</span>
                 <span class="addbuton">+添加任务</span>
+            </div>
+            <div class="meg-pop-up">
+                <p class="standing-p">站内消息通知</p>
+                <ul class="message-u">
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                </ul>
+                <a href="" class="more-a">查看更多</a>
             </div>
         </div>
     </div>
@@ -36,9 +58,9 @@
                 <span class="gneral">消&nbsp;息&nbsp;中&nbsp;心</span>
             </div>
             <hr class="linehr">
-            <p class="report reporte8">全部消息 <span class="prompt">99+</span></p>
-            <p class="report">未读消息 <span class="prompt">99+</span></p>
-            <p class="report">已读消息</p>
+            <p class="report reporte8" id="all-read">全部消息 <span class="prompt">99+</span></p>
+            <p class="report" id="no-read">未读消息 <span class="prompt">99+</span></p>
+            <p class="report" id="has-read">已读消息</p>
         </div>
         <div class="contentright">
             <div class="conright-top">
@@ -58,14 +80,650 @@
                 </ul>
             </div>
             <div class="cetnen">
-                <p class="nav">首页>>消息中心</p>               
-
+                <p class="nav">首页>>消息中心</p>
+                <div class="meg-wrap-box">
+                    <!-- 全部消息 -->
+                    <div class="messge-box" id="all-read-id">
+                        <div class="meg-list-title">
+                            <span>消息列表：</span>
+                            <button type="button" class="btn btn-default dropdown-toggle bton-class" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">报警消息(21)</label>
+                                <span class="caret"></span>
+                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">测域动态</label>
+                                <span class="caret"></span>
+                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">财务消息</label>
+                                <span class="caret"></span>
+                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">产品消息</label>
+                                <span class="caret"></span>
+                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">账户消息</label>
+                                <span class="caret"></span>
+                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select">历史信息</label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="meg-table-title">
+                                <li class="one-li">
+                                    <input type="checkbox" class="checks"> 
+                                </li>
+                                <li class="note-li">标题内容</li>
+                                <li class="data-li">接收时间</li>
+                                <li class="call-li">消息类型</li>
+                            </ul>
+                        <ul class="meg-ul-box">
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                           <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                            </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                            </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                            </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                            </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                            </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <img src="../img/check.png" alt="" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                            <li class="meg-state">
+                                <ul class="meg-in-ul">
+                                    <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                    </li>
+                                    <li class="note-lis">
+                                        <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    </li>
+                                    <li class="data-li">2019年1月1日1时1分1秒</li>
+                                    <li class="call-li">报警消息</li>
+                                </ul>
+                                </li>
+                        </ul>
+                        <div class="the-bottom">
+                                <input type="checkbox" class="checks">
+                                <button type="button" class="meg-delet">删除</button>                    
+                                <button type="button" class="meg-hasread">标记已读</button>                   
+                                <button type="button" class="all-hasread">全部已读</button>                  
+                            </div>
+                        </div>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p class="all-p">共100条,每页显示： 10条</p>
+                                <ul id="paging-message" class="pagination"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 未读消息 -->
+                    <div class="messge-box" id="no-read-id">
+                            <div class="meg-list-title">
+                                <span>消息列表：</span>
+                                <button type="button" class="btn btn-default dropdown-toggle bton-class" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">报警消息(21)</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">测域动态</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">财务消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">产品消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">账户消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">历史信息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="meg-table-title">
+                                    <li class="one-li">
+                                        <input type="checkbox" class="checks"> 
+                                    </li>
+                                    <li class="note-li">标题内容</li>
+                                    <li class="data-li">接收时间</li>
+                                    <li class="call-li">消息类型</li>
+                                </ul>
+                            <ul class="meg-ul-box">
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                            </ul>
+                            <div class="the-bottom">
+                                    <input type="checkbox" class="checks">
+                                    <button type="button" class="meg-delet">删除</button>                    
+                                    <button type="button" class="meg-hasread">标记已读</button>                   
+                                    <button type="button" class="all-hasread">全部已读</button>                  
+                                </div>
+                            </div>
+                            <!-- 分页 -->
+                            <div class="customBootstrap customBootstrap1">
+                                <div class="customBootstrap-relvaer">
+                                    <p class="all-p">共100条,每页显示： 10条</p>
+                                    <ul id="paging-message" class="pagination"></ul>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <!-- 已读消息 -->
+                    <div class="messge-box" id="has-read-id">
+                            <div class="meg-list-title">
+                                <span>消息列表：</span>
+                                <button type="button" class="btn btn-default dropdown-toggle bton-class" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">报警消息(21)</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">测域动态</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">财务消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">产品消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">账户消息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select">历史信息</label>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="meg-table-title">
+                                    <li class="one-li">
+                                        <input type="checkbox" class="checks"> 
+                                    </li>
+                                    <li class="note-li">标题内容</li>
+                                    <li class="data-li">接收时间</li>
+                                    <li class="call-li">消息类型</li>
+                                </ul>
+                            <ul class="meg-ul-box">
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                            <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2018年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                                <li class="meg-state">
+                                    <ul class="meg-in-ul">
+                                        <li class="one-tis">
+                                                <input type="checkbox" class="checks">
+                                        </li>
+                                        <li class="note-lis">
+                                            <span class="note-points"></span>注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                        </li>
+                                        <li class="data-li">2019年1月1日1时1分1秒</li>
+                                        <li class="call-li">报警消息</li>
+                                    </ul>
+                                    </li>
+                            </ul>
+                            <div class="the-bottom">
+                                    <input type="checkbox" class="checks">
+                                    <button type="button" class="meg-delet">删除</button>                    
+                                    <button type="button" class="meg-hasread">标记已读</button>                   
+                                    <button type="button" class="all-hasread">全部已读</button>                  
+                                </div>
+                            </div>
+                            <!-- 分页 -->
+                            <div class="customBootstrap customBootstrap1">
+                                <div class="customBootstrap-relvaer">
+                                    <p class="all-p">共100条,每页显示： 10条</p>
+                                    <ul id="paging-message" class="pagination"></ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 弹出框 -->
+            <div class="meg-tan-box">
+                <div class="message-div">
+                    <div class="top-content">
+                        <p class="head-title">标题内容标题内容标题内容标题内容标题内容</p>
+                        <p class="toplast-p">
+                            <span>接受时间：2019-2-1</span>
+                            <span>消息类型：报警消息</span>
+                        </p>
+                        <img src="../img/x.png" alt="" class="masge-delet"> 
+                    </div>
+                    <p class="meg-main-content">
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                        注：当用户在设置中设置了邮箱与手机以后，再报警设置或任务设置中需要用到这两者时候，均为自动填充.
+                                    
+                    </p>
+                    <button type="button" class="meg-return">返回</button>
+                </div>
             </div>
         </div>
     </div>
     
 
     <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
     <script src="./message.js"></script>
 </body>
 

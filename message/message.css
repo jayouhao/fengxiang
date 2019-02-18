@@ -25,6 +25,9 @@ body{
 .logoimg{
     height: 70px;
 }
+.headright{
+    position: relative;
+}
 .headrigth-top,.headright-bot{
     font-size: 16px;
 }
@@ -35,6 +38,10 @@ body{
 }
 .headrigth-top li:nth-of-type(5){
     margin-right: 0;
+}
+.headrigth-top li:nth-of-type(4) a{
+    color: white;
+    text-decoration: none;
 }
 .headright-bot{
     float: left;
@@ -55,8 +62,7 @@ body{
     font-weight: bold;
 }
 .maincontent{
-    width: 1200px;
-    min-height: 1058px;
+    width: 1200px;    
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -104,8 +110,7 @@ body{
 }
 .conright-top{
     background: #6082B6;
-    height: 75px;
-    margin-top: -10px;
+    height: 75px;    
     border-radius: 10px;
     line-height: 75px;
     padding-left: 20px;
@@ -130,7 +135,7 @@ body{
     font-size: 16px;
 }
 .cetnen{
-    min-height: 1058px;
+    min-height: 836px;   
     padding: 20px;
     padding-right: 0;
     background: #fff;
@@ -138,7 +143,7 @@ body{
     cursor: default;
     margin-top: 5px;    
     position: relative;
-    padding-bottom: 164px;
+    padding-bottom: 100px;
 }
 .prompt{
     background: red;
@@ -154,4 +159,231 @@ body{
 }
 .headrigth-top li{
     cursor: pointer;
+}
+.messge-box{
+    display: none;
+}
+#all-read-id{
+    display: block;
+}
+.meg-table-title{
+    width: 98%;
+    height: 35px;
+    background: #EEEEEE;
+    color: #868686;
+    font-size: 14px;
+    border: 1px solid #D2D2D2;
+    position: relative;
+    margin-top: 10px;
+}
+.meg-table-title li{
+    float: left;
+    position: absolute;
+    top: 6px;
+}
+.meg-ul-box{
+    width: 98%;
+}
+.meg-state{
+    height: 50px;
+    font-size: 14px;
+    color: #535353;
+    border: 1px solid #D2D2D2;
+    border-top: none;
+}
+.meg-in-ul{
+    position: relative;
+}
+.meg-in-ul li{
+    float: left;
+    position: absolute;
+    top: 16px;
+}
+ul{
+    margin-bottom: 0px;
+}
+.checks{
+    width: 16px;
+    height: 16px;
+    background: none;
+}
+.meg-list-title .dropdown-toggle{
+    width: 118px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0px;
+    outline: none;
+}
+
+.meg-list-title .bton-class{
+    background: #0097FF;
+    color: white;
+}
+.meg-list-title .bton-class:hover{
+    background:  #0097FF;
+}
+.meg-in-ul .one-tis{
+    top: 14px;
+    left: 7%;
+}
+.one-li{
+    left: 2%;
+    top: 5px;
+}
+.note-li{
+    left: 7%;    
+}
+.note-lis{
+    left: 11%;
+}
+.data-li{
+    left: 65%;    
+}
+.call-li{
+    left: 86%;  
+}
+.note-points{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #019FFD;
+    position: relative;
+    right: 10px;
+    top: -2px;
+}
+.the-bottom{
+    margin-top: 20px;
+}
+.the-bottom .checks{
+    margin-left: 20px;
+}
+.the-bottom button{
+    height: 30px;
+    padding: 5px 20px;
+    border: 1px solid #D2D2D2;
+    color: #A7A7A7;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 10px;
+    background: #EEEEEE;
+}
+.meg-delet{
+    margin-left: 55px;
+}
+.all-p{
+    position: relative;
+    top: 58px;
+}
+.pagination{
+    position: relative;
+    left: 176px;
+}
+.meg-pop-up{
+    z-index: 1;
+    height: 260px;
+    width: 200px;
+    padding: 10px 16px;
+    color: white;
+    position: absolute;
+    right: 110px;
+    top: 36px;
+    background: #274788;
+    display: none;
+}
+.meg-pop-up li{
+    border-bottom: 1px solid #92A4C3;
+    height: 50px;
+    text-align: left;
+}
+.meg-pop-up li p{
+    position: relative;
+}
+.standing-p{
+    font-size: 11px;
+}
+.one-p{
+    font-size: 12px;
+    margin-left: -6px;
+    top: 6px
+}
+.two-p{
+    font-size: 10px;
+    top: 2px;
+}
+.message-u{
+    margin-top: -4px;
+}
+.more-a{
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    color: white;
+    font-size: 12px;
+}
+.more-a:hover{
+    color: white;
+    text-decoration: none;
+}
+.meg-tan-box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000b0;
+    z-index: 5;
+    display: none;
+}
+.message-div{
+    position: absolute;
+    left: 7%;
+    top: 5%;
+    width: 1088px;
+    padding: 40px;
+    background: white;
+}
+.top-content{
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 30px;
+}
+.head-title{
+    font-size: 25px;
+    color: #0097FD;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.masge-delet{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.toplast-p{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 18px;
+    color: #535353d6;
+}
+.meg-main-content{
+    width: 80%;
+    word-break: normal;
+    color: #535353;
+    margin: auto;
+    margin-top: 55px;
+    font-size: 18px;
+}
+.meg-return{
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+    background: #0097FF;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 40%;
+    margin-top:56px;
 }

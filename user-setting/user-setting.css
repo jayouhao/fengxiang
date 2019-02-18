@@ -36,6 +36,10 @@ body{
 .headrigth-top li:nth-of-type(5){
     margin-right: 0;
 }
+.headrigth-top li:nth-of-type(4) a{
+    color: white;
+    text-decoration: none;
+}
 .headright-bot{
     float: left;
     display: flex;
@@ -129,7 +133,7 @@ body{
     font-size: 16px;
 }
 .cetnen-prot{
-    min-height: 1058px;
+    min-height: 836px;   
     padding: 20px;
     padding-right: 0;
     background: #fff;

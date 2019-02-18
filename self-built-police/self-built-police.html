@@ -18,9 +18,9 @@
         <div class="headright">
             <ul class="headrigth-top">
                 <li><img src="../img/me.png" alt=""> 昵称</li>
-                <li><img src="../img/change-password.png" alt=""> 修改密码</li>
-                <li><img src="../img/set.png" alt=""> 设置</li>
-                <li><img src="../img/information.png" alt=""> 消息中心</li>
+                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
+                <li><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
                 <li><img src="../img/quit.png" alt=""> 退出</li>
             </ul>
             <div class="headright-bot">
@@ -74,9 +74,8 @@
 
                 <div class="centent centent-my-node">
                     <p class="nav">首页>>自建监控点管理>>我的节点</p>
-                    <div class="my-atlas">
-                        <img src="../img/node-background.png" alt="">
-                    </div>
+                    <div id="no-click"></div>
+                    <div class="my-atlas"></div>
                     <ul class="police-list-name">
                         <li>运营商</li>
                         <li>区域</li>
@@ -143,6 +142,7 @@
                         <div class="customBootstrap-relvaer">
                             <p>共100条</p>
                             <ul id="paging" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page" type="number"> 页</p>
                         </div>
                     </div>
                 </div>
@@ -236,11 +236,13 @@
                             <div class="customBootstrap-relvaer">
                                 <p>共100条</p>
                                 <ul id="paging-api" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page1" type="number"> 页</p>
                             </div>
                         </div>
                     </div>
                     <div class="node-show">
-                        <div class="node-show-img"><img src="../img/node-background.png" alt=""></div>
+                        <div id="no-click1"></div>
+                        <div class="node-show-img"></div>
                         <ul class="node-show-hint">
                             <li><span></span>差</li>
                             <li><span></span>警告</li>
@@ -315,6 +317,7 @@
                             <div class="customBootstrap-relvaer">
                                 <p>共100条</p>
                                 <ul id="lists-paing" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page2" type="number"> 页</p>
                             </div>
                         </div>
                     </div>
@@ -336,7 +339,7 @@
                     <li>节点：</li>
                     <li>运营商：</li>
                     <li>省份：</li>
-                    <li>城市：</li>
+                    <li>行政区：</li>
                 </ul>
                 <ul class="node-value">
                     <li class="node-value-li node-value-li1">
@@ -409,6 +412,7 @@
     <script src="../js/jqPaginator.js"></script>
     <script src="../js/distpicker.data.min.js"></script>
     <script src="../js/distpicker.min.js"></script>
+    <script src="../js/jsMap-1.1.1.min.js"></script>
     <script src="./self-built-police.js"></script>
 </body>
 

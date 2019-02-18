@@ -8,6 +8,7 @@
     <title>API管理</title>
     <link rel="stylesheet" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="./API-police.css">
 </head>
 
@@ -18,9 +19,9 @@
         <div class="headright">
             <ul class="headrigth-top">
                 <li><img src="../img/me.png" alt=""> 昵称</li>
-                <li><img src="../img/change-password.png" alt=""> 修改密码</li>
-                <li><img src="../img/set.png" alt=""> 设置</li>
-                <li><img src="../img/information.png" alt=""> 消息中心</li>
+                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
+                <li><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
                 <li><img src="../img/quit.png" alt=""> 退出</li>
             </ul>
             <div class="headright-bot">
@@ -59,138 +60,182 @@
                 </ul>
             </div>
             <div>
-            <div class="cetnen-prot">
-                <p class="nav">首页>>API管理>>申请接口</p>
-                <p class="prot-red">注：用户账户需满2000元才可申请接口</p>
-                <div class="prot-flex">
-                    <ul class="prot-names">
-                        <li>用户名：</li>
-                        <li>API密码：</li>
-                        <!-- 未认证的 -->
-                        <li class="no-attestation">类型：</li>
-                        <!-- 已认证的 -->
-                        <li class="yes-attestation">认证类型：</li>
-                        <li>申请接口用途：</li>
-                    </ul>
-                    <ul class="prot-value">
-                        <li>加工圈</li>
-                        <li>
-                            <span class="prot-password">sdf342kldfhg</span>
-                            <button type="button" class="prot-but">复制</button>
-                            <button type="button" class="prot-but">重新生成</button>
-                        </li>
-                        <!-- 未认证的 -->
-                        <li class="no-attestation">
-                            <button type="button" class="prot-type">个人</button>
-                            <button type="button" class="prot-type">企业</button>
-                        </li>
-                        <!-- 已认证的 -->
-                        <li class="yes-attestation yes-attestationcen">
-                            <img src="../img/check.png" alt="">
-                            你已经完成个人实名认证
-                        </li>
-                        <li>
-                            <textarea class="prot-textarea" name="" id="" cols="30" rows="10"></textarea>
-                        </li>
-                    </ul>
+                <div class="cetnen-prot">
+                    <p class="nav">首页>>API管理>>申请接口</p>
+                    <p class="prot-red">注：用户账户需满2000元才可申请接口</p>
+                    <div class="prot-flex">
+                        <ul class="prot-names">
+                            <li>用户名：</li>
+                            <li>API密码：</li>
+                            <!-- 未认证的 -->
+                            <li class="no-attestation">类型：</li>
+                            <!-- 已认证的 -->
+                            <li class="yes-attestation">认证类型：</li>
+                            <li>申请接口用途：</li>
+                        </ul>
+                        <ul class="prot-value">
+                            <li>加工圈</li>
+                            <li>
+                                <span class="prot-password">sdf342kldfhg</span>
+                                <button type="button" class="prot-but">复制</button>
+                                <button type="button" class="prot-but">重新生成</button>
+                            </li>
+                            <!-- 未认证的 -->
+                            <li class="no-attestation">
+                                <button type="button" class="prot-type">个人</button>
+                                <button type="button" class="prot-type">企业</button>
+                            </li>
+                            <!-- 已认证的 -->
+                            <li class="yes-attestation yes-attestationcen">
+                                <img src="../img/check.png" alt="">
+                                你已经完成个人实名认证
+                            </li>
+                            <li>
+                                <textarea class="prot-textarea" name="" id="" cols="30" rows="10"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="prot-submit">提&nbsp;交</button>
                 </div>
-                <button type="button" class="prot-submit">提&nbsp;交</button>
-            </div>
 
-            <div class="interface-management">
-                <p class="nav">首页>>API管理>>接口管理</p>
-                <div class="prot-flex">
-                    <ul class="prot-names">
-                        <li>接口状态：</li>
-                        <li>测币余额：</li>
-                        <li>监控类型：</li>
-                        <li>开始时间：</li>
-                        <li>结束时间：</li>
-                    </ul>
-                    <ul class="prot-value">
-                        <li>
-                            <span class="interface-blue">正常</span>
-                            <span class="prot-password">sdf342kldfhg</span>
-                            <button type="button" class="prot-but">复制</button>
-                            <button type="button" class="prot-but">重新生成</button>
+                <div class="interface-management">
+                    <p class="nav">首页>>API管理>>接口管理</p>
+                    <div class="prot-flex">
+                        <ul class="prot-names">
+                            <li>接口状态：</li>
+                            <li>测币余额：</li>
+                            <li>监控类型：</li>
+                            <li>开始时间：</li>
+                            <li>结束时间：</li>
+                        </ul>
+                        <ul class="prot-value">
+                            <li>
+                                <span class="interface-blue">正常</span>
+                                <span class="prot-password">sdf342kldfhg</span>
+                                <button type="button" class="prot-but">复制</button>
+                                <button type="button" class="prot-but">重新生成</button>
+                            </li>
+                            <li>
+                                <span class="interface-money">200</span>
+                                <img src="../img/cy.png" class="interface-cy" alt="">
+                            </li>
+                            <li class="replaver-api">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <label class="select select-type1"></label>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu mes-state1">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <label class="select">全部</label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <label class="select">异常</label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <label class="select">恢复</label>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dataxj-relava">
+                                <div class="dataxj">
+                                    <img src="../img/reqi.png" alt="" class="reqimg">
+                                    <input type="text" class="datainput start-time1">
+
+                                    <img class="xkes xkes1" src="../img/x.png" alt="">
+                                    <div id='schedule-box1' class="boxshaw"></div>
+
+                                    <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                    <img src="../img/sanyou.png" alt="" class="rightjian">
+                                </div>
+                                <input type="text" id="datetimepicker1" class="input-value">
+                            </li>
+                            <li class="dataxj-relava">
+                                <div class="dataxj">
+                                    <img src="../img/reqi.png" alt="" class="reqimg">
+                                    <input type="text" class="datainput start-time2">
+
+                                    <img class="xkes xkes2" src="../img/x.png" alt="">
+                                    <div id='schedule-box2' class="boxshaw"></div>
+
+                                    <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                    <img src="../img/sanyou.png" alt="" class="rightjian">
+                                </div>
+                                <input type="text" id="datetimepicker2" class="input-value">
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="apl-submit">查&nbsp;询</button>
+
+                    <ul class="police-list-name">
+                            <li>ID</li>
+                            <li>测试URL</li>
+                            <li>测试类型</li>
+                            <li>测试时间</li>
+                            <li>请求总数</li>
+                        </ul>
+                        <ul class="police-list-data">
+                            <li class="list-lis">
+                                <ul class="police-list-datas">
+                                    <li>1</li>
+                                    <li>大大师傅大师傅大师傅</li>
+                                    <li>32</li>
+                                    <li>士大夫</li>
+                                    <li>对</li>
+                                </ul>
+                            </li>
+                            <li class="list-lis">
+                                <ul class="police-list-datas">
+                                    <li>1</li>
+                                    <li>大师傅</li>
+                                    <li>32</li>
+                                    <li>士大夫</li>
+                                    <li>对</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div class="record">
+                    <p class="nav">首页>>API管理>>API监控记录</p>
+                    <ul class="record-top">
+                        <li class="record-li1">ID <input type="text" class="record-id record-id1"></li>
+                        <li class="record-namesj record-namesj1">
+                            <span class="span1">开始时间</span>
+                            <div class="dataxj">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput datainput1 start-time3" value="2019-01-21">
+
+                                <img class="xkes xkes3" src="../img/x.png" alt="">
+                                <div id='schedule-box3' class="boxshaw"></div>
+
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </div>
                         </li>
-                        <li>
-                            <span class="interface-money">200</span>
-                            <img src="../img/cy.png" class="interface-cy" alt="">
+                        <li class="record-namesj record-namesj1">
+                            <span class="span1">结束时间</span>
+                            <div class="dataxj">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput datainput1 start-time4" value="2019-01-21">
+
+                                <img class="xkes xkes4" src="../img/x.png" alt="">
+                                <div id='schedule-box4' class="boxshaw"></div>
+
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </div>
                         </li>
-                        <li class="replaver-api">
+                        <li class="dataxj-relava record-type record-type1">
+                            监控类型
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <label class="select select-type1"></label>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu mes-state1">
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">全部</label>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">异常</label>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">恢复</label>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dataxj-relava">
-                            <p class="dataxj">
-                                <img src="../img/reqi.png" alt="" class="reqimg">
-                                <input type="text" class="datainput" value="2019-01-21">
-                                <img src="../img/sanzuo.png" alt="" class="leftjian">
-                                <img src="../img/sanyou.png" alt="" class="rightjian">
-                            </p>
-                            <input type="text" class="input-value" value="11:22">
-                        </li>
-                        <li class="dataxj-relava">
-                            <p class="dataxj">
-                                <img src="../img/reqi.png" alt="" class="reqimg">
-                                <input type="text" class="datainput" value="2019-01-21">
-                                <img src="../img/sanzuo.png" alt="" class="leftjian">
-                                <img src="../img/sanyou.png" alt="" class="rightjian">
-                            </p>
-                            <input type="text" class="input-value" value="11:22">
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" class="apl-submit">查&nbsp;询</button>
-            </div>
-
-
-            <div class="record">
-                <p class="nav">首页>>API管理>>API监控记录</p>
-                <ul class="record-top">
-                    <li class="record-li1">ID <input type="text" class="record-id"></li>
-                    <li class="record-namesj">
-                        <span>开始时间</span>
-                        <p class="dataxj">
-                            <img src="../img/reqi.png" alt="" class="reqimg">
-                            <input type="text" class="datainput" value="2019-01-21">
-                            <img src="../img/sanzuo.png" alt="" class="leftjian">
-                            <img src="../img/sanyou.png" alt="" class="rightjian">
-                        </p>
-                    </li>
-                    <li class="record-namesj">
-                        <span>结束时间</span>
-                        <p class="dataxj">
-                            <img src="../img/reqi.png" alt="" class="reqimg">
-                            <input type="text" class="datainput" value="2019-01-21">
-                            <img src="../img/sanzuo.png" alt="" class="leftjian">
-                            <img src="../img/sanyou.png" alt="" class="rightjian">
-                        </p>
-                    </li>
-                    <li class="dataxj-relava record-type">
-                        监控类型
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <label class="select select-type2"></label>
                                 <span class="caret"></span>
@@ -212,18 +257,18 @@
                                     </a>
                                 </li>
                             </ul>
-                    </li>
-                    <li>
-                        <button class="apl-submit record-button" type="button">查&nbsp;询</button>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <button class="apl-submit record-button" type="button">查&nbsp;询</button>
+                        </li>
+                    </ul>
 
-                <ul class="police-list-name">
+                    <ul class="police-list-name">
                         <li>ID</li>
                         <li>测试URL</li>
                         <li>测试类型</li>
                         <li>测试时间</li>
-                        <li>请求总数</li>                        
+                        <li>请求总数</li>
                     </ul>
                     <ul class="police-list-data">
                         <li class="list-lis">
@@ -232,7 +277,7 @@
                                 <li>大大师傅大师傅大师傅</li>
                                 <li>32</li>
                                 <li>士大夫</li>
-                                <li>对</li>                                
+                                <li>对</li>
                             </ul>
                         </li>
                         <li class="list-lis">
@@ -241,7 +286,7 @@
                                 <li>大师傅</li>
                                 <li>32</li>
                                 <li>士大夫</li>
-                                <li>对</li>            
+                                <li>对</li>
                             </ul>
                         </li>
                     </ul>
@@ -250,16 +295,19 @@
                         <div class="customBootstrap-relvaer">
                             <p>共100条</p>
                             <ul id="paging" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page" type="number"> 页</p>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
 
         </div>
     </div>
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jqPaginator.js"></script>
+    <script src="../js/schedule.js"></script>
+    <script src="../js/jquery.datetimepicker.full.min.js"></script>
     <script src="./API-police.js"></script>
 </body>
 
