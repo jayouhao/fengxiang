@@ -207,6 +207,9 @@ ul{
     height: 16px;
     background: none;
 }
+.meg-list-title{
+    position: relative;
+}
 .meg-list-title .dropdown-toggle{
     width: 118px;
     height: 30px;
@@ -215,13 +218,20 @@ ul{
     border-radius: 0px;
     outline: none;
 }
-
+.message-list-button{
+    display: inline-block;    
+}
+.message-list-button div{
+    display: inline-block;
+    position: relative;
+}
 .meg-list-title .bton-class{
-    background: #0097FF;
-    color: white;
+    background: #fff;
+    /* color: white; */
 }
 .meg-list-title .bton-class:hover{
-    background:  #0097FF;
+    /* background:  #0097FF; */
+    background:  #fff;
 }
 .meg-in-ul .one-tis{
     top: 14px;
