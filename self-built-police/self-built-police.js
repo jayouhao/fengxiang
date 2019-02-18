@@ -170,12 +170,12 @@ $(function () {
         height: 400,
         areaName: true
     });
-    setTimeout(function(){
-        //新疆的
-        $(".centent-my-node .jsmap-xinjiang").click();
-        //台湾
-        $(".centent-my-node .jsmap-taiwan").click();        
-    },1000);
+    // setTimeout(function(){
+    //     //新疆的
+    //     $(".centent-my-node .jsmap-xinjiang").click();
+    //     //台湾
+    //     $(".centent-my-node .jsmap-taiwan").click();        
+    // },1000);
 
     
     jsMap.config(".node-show-img", {
@@ -184,12 +184,12 @@ $(function () {
         height: 400,
         areaName: true
     });
-    setTimeout(function(){
-        //新疆的
-        $(".centent-node-general .jsmap-xinjiang").click();
-        //台湾
-        $(".centent-node-general .jsmap-taiwan").click();        
-        //海南
-        $(".centent-node-general .jsmap-hainan").click();                
-    },1000); 
+    // setTimeout(function(){
+    //     //新疆的
+    //     $(".centent-node-general .jsmap-xinjiang").click();
+    //     //台湾
+    //     $(".centent-node-general .jsmap-taiwan").click();        
+    //     //海南
+    //     $(".centent-node-general .jsmap-hainan").click();                
+    // },1000); 
 })

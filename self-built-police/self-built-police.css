@@ -825,6 +825,7 @@ input[type="number"]{
 }
 #no-click,
 #no-click1{
+    display: none;
     width: 76%;
     height: 406px;
     position: absolute;
