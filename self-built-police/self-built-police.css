@@ -187,6 +187,105 @@ p,span,button,input,div{
     top: 469px;
 }
 
+/* 充值弹出框 */
+.popup-recharge{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+.popup-box{
+    width: 900px;
+    height: 460px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -450px;
+    box-shadow: 0 0 2px #fff;
+    cursor: default;
+}
+.popup-name{
+    font-size: 34px;
+    color: #00A2E8;
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    padding: 35px 0 20px 0;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.popup-number{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 90px;
+}
+.popup-number span{
+    margin-right: 20px;
+}
+.method{
+    font-size: 20px;   
+    margin-bottom: 20px;
+    padding-left: 70px;
+}
+.method span,
+.popup-money span{
+    margin-right: 30px;
+}
+.method-img{
+    width: 162px;
+    height: 54px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.method-img:nth-of-type(1){
+    box-shadow: blue 0px 0px 1px;
+}
+.popup-money{
+    font-size: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 70px;
+}
+input{
+    width: 130px;
+    height: 40px;
+    border: 1px solid #DCDCDC;
+    padding-right: 36px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.popup-money .yuan1{
+    position: absolute;
+    top: 20%;
+    left: 32.5%;
+    font-size: 18px;
+}
+.reds{
+    color: red;
+    font-size: 15px;
+}
+.popup-button{
+    text-align: center;
+}
+.popup-button button{
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 60px;
+    background: #00A1EA;
+}
+.popup-button .canel{
+    background: #D2D2D2;
+}
+/* end */
 .popup-recharge{
     position: absolute;
     top: 0;
@@ -836,6 +935,8 @@ input[type="number"]{
 #no-click1{
     top: 15px;
 }
+
+
 
 
 

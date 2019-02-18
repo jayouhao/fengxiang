@@ -78,9 +78,9 @@ $(function () {
                     });
                     $(".get-page").val("");
                 }
-            }else{
+            } else {
                 var num = $(".get-page1").val();
-                var num1=$(".get-page2").val();
+                var num1 = $(".get-page2").val();
                 if (num) {
                     $('#paging-api').jqPaginator({
                         //总页数
@@ -124,19 +124,19 @@ $(function () {
 
     //概况分页
     $('#paging-api').jqPaginator({
-       //总页数
-       totalPages: 100,
-       //显示多少个页码
-       visiblePages: 1,
-       //当前页
-       currentPage: 1,
-       prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
-       next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
-       page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
-       onPageChange: function (n) {
-           $("#demo2-text").html("当前第" + n + "页");
-           console.log("你选择的=>", n, "页");
-       }
+        //总页数
+        totalPages: 100,
+        //显示多少个页码
+        visiblePages: 1,
+        //当前页
+        currentPage: 1,
+        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+        next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+        onPageChange: function (n) {
+            $("#demo2-text").html("当前第" + n + "页");
+            console.log("你选择的=>", n, "页");
+        }
     });
 
     //概况地图分页
@@ -177,7 +177,7 @@ $(function () {
     //     $(".centent-my-node .jsmap-taiwan").click();        
     // },1000);
 
-    
+
     jsMap.config(".node-show-img", {
         name: "china",
         width: 600,
@@ -192,4 +192,18 @@ $(function () {
     //     //海南
     //     $(".centent-node-general .jsmap-hainan").click();                
     // },1000); 
+
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
+
+    //充值
+    $(".recharge-button").click(function () {
+        $(".popup-recharge").css({ display: "block" });
+    })
 })
